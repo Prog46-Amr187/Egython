@@ -1,5 +1,5 @@
-#    Zed - UserBot    #
-#    Owner - @ZlZZl77  #
+#    Ralls - UserBot    #
+#    Owner - @N7QQQ  #
 
 import io
 import json
@@ -24,11 +24,11 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
         query = event.text
         tosh = re.compile("secret (.*) (.*)")
         match = re.findall(tosh, query)
-        if query.startswith("**ZedBot") and event.query.user_id == bot.uid:
+        if query.startswith("**Ralls1bot") and event.query.user_id == bot.uid:
             buttons = [
                 (
                     custom.Button.inline("Stats", data="stats"),
-                    Button.url("Repo", "https://github.com/Zedthon/ZED_USERBOT"),
+                    Button.url("Repo", "https://github.com/RallsTeam/Ralls_thon"),
                 )
             ]
             if TOSH and TOSH.endswith((".jpg", ".png")):
@@ -55,7 +55,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
             rev_text = query[::-1]
             buttons = paginate_help(0, CMD_LIST, "helpme")
             result = builder.article(
-                "©Zedbot Help",
+                "©Ralls1bot Help",
                 text="{}\n\n⌔∮ عدد الاضافات : {}**".format(query, len(CMD_LIST)),
                 buttons=buttons,
                 link_preview=False,
@@ -155,7 +155,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
             buttons = paginate_help(current_page_number + 1, CMD_LIST, "helpme")
             await event.edit(buttons=buttons)
         else:
-            reply_pop_up_alert = "⌔∮ عليك الحصول على بوت زد ثون للحصول عليه اذهب الى @ZedThon. "
+            reply_pop_up_alert = "⌔∮ عليك الحصول على بوت ريس ثون للحصول عليه اذهب الى @RallsThon. "
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(
@@ -171,7 +171,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
             )
             await event.edit(buttons=buttons)
         else:
-            reply_pop_up_alert = "⌔∮ عليك الحصول على بوت زد ثون للحصول عليه اذهب الى @ZedThon. "
+            reply_pop_up_alert = "⌔∮ عليك الحصول على بوت ريس ثون للحصول عليه اذهب الى @RallsThon. "
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"secret_(.*)")))
@@ -187,7 +187,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
                     encrypted_tcxt = message["text"]
                     reply_pop_up_alert = encrypted_tcxt
                 else:
-                    reply_pop_up_alert = "⌔∮ عليك الحصول على بوت زد ثون للحصول عليه اذهب الى @ZedThon. "
+                    reply_pop_up_alert = "⌔∮ عليك الحصول على بوت ريس ثون للحصول عليه اذهب الى @RallsThon. "
             except KeyError:
                 reply_pop_up_alert = "⌔∮ هذه الرسالة لم تعد موجودة في خادم بوت"
         else:
@@ -229,7 +229,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
                         caption=plugin_name,
                     )
         else:
-            reply_pop_up_alert = "⌔∮ عليك الحصول على بوت زد ثون للحصول عليه اذهب الى @ZedThon. "
+            reply_pop_up_alert = "⌔∮ عليك الحصول على بوت ريس ثون للحصول عليه اذهب الى @RallsThon. "
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
@@ -237,7 +237,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
         if event.query.user_id == bot.uid:
             await event.edit("**⌔∮ تم اغلاق القائمـه**")
         else:
-            reply_pop_up_alert = "⌔∮ عليك الحصول على بوت زد ثون للحصول عليه اذهب الى @ZedThon. "
+            reply_pop_up_alert = "⌔∮ عليك الحصول على بوت ريس ثون للحصول عليه اذهب الى @RallsThon. "
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"stats")))
