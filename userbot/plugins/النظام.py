@@ -16,7 +16,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "icss"
 @icssbot.on(sudo_cmd(allow_sudo=True, pattern=r"النظام$"))
 async def psu(event):
     uname = platform.uname()
-    softw = "** 𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 𝙕𝞝𝘿𝙏𝙃𝙊𝙉 𝑺𝒀𝑺𝑻𝑬𝑴 𝑰𝑵𝑭𝑶 𓆪 **\n"
+    softw = "** 𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 𝑺𝒀𝑺𝑻𝑬𝑴 𝑰𝑵𝑭𝑶 𓆪 **\n"
     softw += f"** ⌔∮ النظام :↬ ** `{uname.system}`\n"
     softw += f"** ⌔∮ المرجع  :↬ ** `{uname.release}`\n"
     softw += f"** ⌔∮ الاصدار  :↬ ** `{uname.version}`\n"
