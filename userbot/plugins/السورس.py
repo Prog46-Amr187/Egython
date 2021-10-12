@@ -1,6 +1,6 @@
 alv = (
 """
-**©zed - @ZedThon
+**©zed - @Rallsthon
   - Plugin Alive** 
   - **Commend:** `.السورس`
   - **Function:** لعرض معلومات السورس
@@ -15,10 +15,10 @@ from resources.strings import *
 from . import ALIVE_NAME, StartTime, get_readable_time, icsv, mention
 from . import reply_id as rd
 
-DEFAULTUSER = ALIVE_NAME or "ZED"
-ICSS_IMG = Config.ALIVE_PIC or "https://telegra.ph/file/5adc05c0958432a117183.jpg"
-ICSS_TEXT = Config.CUSTOM_ALIVE_TEXT or "𓆩 𝑾𝑬𝑳𝑪𝑶𝑴𝑬 𝑻𝑶 𝑺𝑶𝑼𝑹𝑪𝑬 𝙕𝞝𝘿𝙏𝙃𝙊𝙉 𓆪"
-ICSEM = Config.CUSTOM_ALIVE_EMOJI or "  ⌔∮ "
+DEFAULTUSER = ALIVE_NAME or "Ralls"
+ICSS_IMG = Config.ALIVE_PIC or "https://telegra.ph/file/d5eec83ac5253c6560507.jpg"
+ICSS_TEXT = Config.CUSTOM_ALIVE_TEXT or "اهلا بك في سورس ريس ثون"
+ICSEM = Config.CUSTOM_ALIVE_EMOJI or "⌔︙"
 
 
 @icssbot.on(admin_cmd(outgoing=True, pattern="السورس$"))
@@ -32,13 +32,12 @@ async def ica(icss):
     if ICSS_IMG:
         ics_c = f"**{ICSS_TEXT}**\n"
         ics_c += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻 \n"
-        ics_c += f"**{ICSEM} قاعدة البيانات ↫** `{check_sgnirts}`\n"
-        ics_c += f"**{ICSEM} اصدار التليثون  ↫** `{version.__version__}\n`"
-        ics_c += f"**{ICSEM} اصدار زد ثـون ↫** `{icsv}`\n"
-        ics_c += f"**{ICSEM} اصدار البايثون ↫** `{python_version()}\n`"
-        #        ics_c += f"**{ICSEM} مدة التشغيل ↫** `{icsupt}\n`"
+        ics_c += f"**{ICSEM} اصدار ريس ثـون ↫** `{icsv}`\n"
+        ics_c += f"**{ICSEM} مدة التشغيل ↫** `{icsupt}`\n"
         ics_c += f"**{ICSEM} المستخدم ↫** {mention}\n"
-        ics_c += f"**{ICSEM} **  **[قـنـاة الـسـورس]**(https://t.me/ZedThon) .\n"
+        ics_c += f"**{ICSEM} **  **[قـنـاة الـسـورس]**(https://t.me/Rallsthon)** .\n"
+        ics_c += f"**{ICSEM} **  **[مطور 1]**(https://t.me/N7QQQ) .  \n"
+        ics_c += f"**{ICSEM} **  **[مطور 2]**(https://t.me/A_A7A) .  \n"
         ics_c += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         await icss.client.send_file(
             icss.chat_id, ICSS_IMG, caption=ics_c, reply_to=ics_id
@@ -50,7 +49,7 @@ async def ica(icss):
             f"**{ICSS_TEXT}**\n\n"
             f"**{ICSEM} قاعدة البيانات ↫**  `{check_sgnirts}`\n"
             f"**{ICSEM} اصدار التليثون  ↫** `{version.__version__}\n`"
-            f"**{ICSEM} اصدار زد ثـون ↫** `{icsv}`\n"
+            f"**{ICSEM} اصدار ريس ثـون ↫** `{icsv}`\n"
             f"**{ICSEM} اصدار البايثون  ↫** `{python_version()}\n`"
             f"**{ICSEM} مدة التشغيل ↫** `{icsupt}\n`"
             f"**{ICSEM} المستخدم ↫** {mention}\n",
