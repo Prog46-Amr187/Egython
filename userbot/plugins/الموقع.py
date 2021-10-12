@@ -1,4 +1,4 @@
-#ZedThon
+#RallsThon
 
 from geopy.geocoders import Nominatim
 from telethon.tl import types
