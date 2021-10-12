@@ -16,4 +16,4 @@ async def hi(zed):
 ```
 
 - استمتعو به 💕
-- teamthon ( [DEV-SOURCE](https://t.me/ZedThon) )
+- teamthon ( [DEV-SOURCE](https://t.me/Rallsthon) )
