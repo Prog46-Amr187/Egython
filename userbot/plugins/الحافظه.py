@@ -1,4 +1,4 @@
-# pm and tagged messages logger for zed edit by:  @ZZZZl1l
+# pm and tagged messages logger for zed edit by:  @N7QQQ
 
 import asyncio
 
