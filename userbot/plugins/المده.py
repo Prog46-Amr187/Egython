@@ -1,6 +1,6 @@
 """
-©Zed : @ZedThon
-  - zed UpTime
+©Ralls : @RallsThon
+  - Ralls UpTime
   - Commend: .المده
 """
 
@@ -8,9 +8,9 @@ import time
 
 from . import ALIVE_NAME, StartTime, get_readable_time, mention, reply_id
 
-DEFULTUSER = ALIVE_NAME or "ZEDbot"
-ICS_IMG = "https://telegra.ph/file/f72cde9805f01e0bf04ed.jpg"
-ICSS_TEXT = "𓆩 𝑾𝑬𝑳𝑪𝑶𝑴𝑬 𝑻𝑶 𝑺𝑶𝑼𝑹𝑪𝑬 𝙕𝞝𝘿𝙏𝙃𝙊𝙉 𓆪"
+DEFULTUSER = ALIVE_NAME or "Ralls1bot"
+ICS_IMG = "https://telegra.ph/file/637fe91a75c073278e4da.jpg"
+ICSS_TEXT = "𓆩 𝑾𝑬𝑳𝑪𝑶𝑴𝑬 𝑻𝑶 𝑺𝑶𝑼𝑹𝑪𝑬 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 𓆪"
 ICSEM = "**⌔∮**"
 
 
