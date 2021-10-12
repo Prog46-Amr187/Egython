@@ -1,6 +1,6 @@
 """
-©Zed : @ZedThon
-  - Warns Code For Zed
+©Ralls : @RallsThon
+  - Warns Code For Ralls
   - Commends: .warn, .warns, .resetwarns
 """
 import html
