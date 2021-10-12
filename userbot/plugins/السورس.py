@@ -1,6 +1,6 @@
 alv = (
 """
-**©zed - @Rallsthon
+**©Ralls - @Rallsthon
   - Plugin Alive** 
   - **Commend:** `.السورس`
   - **Function:** لعرض معلومات السورس
@@ -16,7 +16,7 @@ from . import ALIVE_NAME, StartTime, get_readable_time, icsv, mention
 from . import reply_id as rd
 
 DEFAULTUSER = ALIVE_NAME or "Ralls"
-ICSS_IMG = Config.ALIVE_PIC or "https://telegra.ph/file/d5eec83ac5253c6560507.jpg"
+ICSS_IMG = Config.ALIVE_PIC or "https://telegra.ph/file/637fe91a75c073278e4da.jpg"
 ICSS_TEXT = Config.CUSTOM_ALIVE_TEXT or "اهلا بك في سورس ريس ثون"
 ICSEM = Config.CUSTOM_ALIVE_EMOJI or "⌔︙"
 
@@ -36,8 +36,8 @@ async def ica(icss):
         ics_c += f"**{ICSEM} مدة التشغيل ↫** `{icsupt}`\n"
         ics_c += f"**{ICSEM} المستخدم ↫** {mention}\n"
         ics_c += f"**{ICSEM} **  **[قـنـاة الـسـورس]**(https://t.me/Rallsthon) .\n"
-        ics_c += f"**{ICSEM} **  **[مطور 1]**(https://t.me/N7QQQ) .  \n"
-        ics_c += f"**{ICSEM} **  **[مطور 2]**(https://t.me/A_A7A) .  \n"
+        ics_c += f"**{ICSEM} **  **[مطــور ¹𓆰]**(https://t.me/N7QQQ) .  \n"
+        ics_c += f"**{ICSEM} **  **[مطــور ²𓆰]**(https://t.me/A_A7A) .  \n"
         ics_c += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         await icss.client.send_file(
             icss.chat_id, ICSS_IMG, caption=ics_c, reply_to=ics_id
