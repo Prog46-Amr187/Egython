@@ -1,4 +1,4 @@
-# get id code for zed edit by @ZedThon
+# get id code for zed edit by @Rallsthon
 
 from telethon.utils import pack_bot_file_id
 
