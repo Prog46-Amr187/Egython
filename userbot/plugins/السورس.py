@@ -35,7 +35,7 @@ async def ica(icss):
         ics_c += f"**{ICSEM} اصدار ريس ثـون ↫** `{icsv}`\n"
         ics_c += f"**{ICSEM} مدة التشغيل ↫** `{icsupt}`\n"
         ics_c += f"**{ICSEM} المستخدم ↫** {mention}\n"
-        ics_c += f"**{ICSEM} **  **[قـنـاة الـسـورس]**(https://t.me/Rallsthon)** .\n"
+        ics_c += f"**{ICSEM} **  **[قـنـاة الـسـورس]**(https://t.me/Rallsthon) .\n"
         ics_c += f"**{ICSEM} **  **[مطور 1]**(https://t.me/N7QQQ) .  \n"
         ics_c += f"**{ICSEM} **  **[مطور 2]**(https://t.me/A_A7A) .  \n"
         ics_c += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
