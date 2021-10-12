@@ -1,4 +1,4 @@
-#ZedThon
+#Rallsthon
 
 from telethon.tl.types import ChannelParticipantsAdmins
 
