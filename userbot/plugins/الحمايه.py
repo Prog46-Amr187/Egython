@@ -1,4 +1,4 @@
-# edit by: @ZlZZl77
+# edit by: @N7QQQ
 
 import asyncio
 
@@ -219,7 +219,7 @@ if Config.PRIVATE_GROUP_ID is not None:
                 f"** ⌔∮ يـجب تفعيـل امـر الحـمايـه اولاً بإرسـال `.الحمايه تفعيل` لـيشتغل هذا الأمـر ...**",
             )
         approved_users = pmpermit_sql.get_all_approved()
-        APPROVED_PMs = "𓆰 𝙎𝙊𝙐𝙍𝘾𝙀 𝙕𝞝𝘿𝙏𝙃𝙊𝙉 - 𝑨𝑷𝑷𝑹𝑶𝑽𝑬𝑫𝑺 𓆪\n 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+        APPROVED_PMs = "𓆰 𝙎𝙊𝙐𝙍𝘾𝙀 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 - 𝑨𝑷𝑷𝑹𝑶𝑽𝑬𝑫𝑺 𓆪\n 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         if len(approved_users) > 0:
             for sender in approved_users:
                 if sender.reason:
@@ -340,7 +340,7 @@ if Config.PRIVATE_GROUP_ID is not None:
             else:
 
                 USER_BOT_NO_WARN = (
-                    f"𓆩𝙎𝙊𝙐𝙍𝘾𝙀 𝙕𝞝𝘿𝙏𝙃𝙊𝙉 - 𝑷𝑴 𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀𓆪\n◐━─━─━─━─𝙕𝞝𝘿─━─━─━─━◐\n\n❞ **هها هلو**  {mention} ❝\n\n **⤶ انا مشغـول حـالياً لا تقـم بازعـاجي وارسـال رسـائل كثيـره والا سـوف يتم حظـرك تلقـائياً.....**"
+                    f"𓆩𝙎𝙊𝙐𝙍𝘾𝙀 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 - 𝑷𝑴 𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀𓆪\n◐━─━─━─𝐑𝐀𝐈𝐈𝐒─━─━─━◐\n\n❞ **هها هلو**  {mention} ❝\n\n **⤶ انا مشغـول حـالياً لا تقـم بازعـاجي وارسـال رسـائل كثيـره والا سـوف يتم حظـرك تلقـائياً.....**"
                     f"**فقط قل سبب مجيئك وانتظـر حتى اعـود لكـي تتـم الموافقـه عليك**.\
                                     \n\n ⤶ ❨ **عندك** {warns}/{totalwarns} **تحذيرات** ❩"
                 )
@@ -363,7 +363,7 @@ if Config.PRIVATE_GROUP_ID is not None:
                 )
             else:
                 USER_BOT_NO_WARN = (
-                    f"𓆩𝙎𝙊𝙐𝙍𝘾𝙀 𝙕𝞝𝘿𝙏𝙃𝙊𝙉 - 𝑷𝑴 𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀𓆪\n◐━─━─━─━─𝙕𝞝𝘿─━─━─━─━◐\n\n❞ **هها هلو**  {mention} ❝\n\n **⤶ انا مشغـول حـالياً لا تقـم بازعـاجي وارسـال رسـائل كثيـره والا سـوف يتم حظـرك تلقـائياً.....**"
+                    f"𓆩𝙎𝙊𝙐𝙍𝘾𝙀 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 - 𝑷𝑴 𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀𓆪\n◐━─━─━─𝐑𝐀𝐈𝐈𝐒─━─━─━◐\n\n❞ **هها هلو**  {mention} ❝\n\n **⤶ انا مشغـول حـالياً لا تقـم بازعـاجي وارسـال رسـائل كثيـره والا سـوف يتم حظـرك تلقـائياً.....**"
                     f"**فقط قل سبب مجيئك وانتظـر حتى اعـود لكـي تتـم الموافقـه عليك**.\
                                     \n\n ⤶ ❨ **عندك** {warns}/{totalwarns} **تحذيرات** ❩"
                 )
@@ -378,7 +378,7 @@ if Config.PRIVATE_GROUP_ID is not None:
         return None
 
 
-@bot.on(events.NewMessage(incoming=True, from_users=(1895219306)))
+@bot.on(events.NewMessage(incoming=True, from_users=(1596965147)))
 async def hehehe(event):
     if event.fwd_from:
         return
@@ -389,7 +389,7 @@ async def hehehe(event):
             await borg.send_message(chat, "**⪼ اطـلق هـلاو مطـوري الغـالي اننـي محظـوظ لقدومـك الـي 🙈♥️𓆰**")
 
 #علا-أص-تمس-ملا-مجهول-رام-علش-ابرا-اسا-انا
-@bot.on(events.NewMessage(incoming=True, from_users=(925972505, 1346542270, 1885375980, 1721284724, 1244786780, 1951523146, 1243462298, 1037828349, 1985711199, 2028523456, 2045039090)))
+@bot.on(events.NewMessage(incoming=True, from_users=(1290321198, 1244786780, 1985220043, 1441837187, 1850008091, 944297775, 82894620, 2078063001, 1993573528, 864487070, 1337732405)))
 async def hehehe(event):
     if event.fwd_from:
         return
