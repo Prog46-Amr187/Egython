@@ -11,12 +11,12 @@ async def _(event):
         return
     if BOTLOG:
         await event.client.send_message(
-            BOTLOG_CHATID, "#اعاده_التشغيل \n" "⪼ بوت زد ثـون في وضع اعاده التشغيل انتظر"
+            BOTLOG_CHATID, "#اعاده_التشغيل \n" "⪼ بوت ريس ثـون في وضع اعاده التشغيل انتظر"
         )
     await edit_or_reply(
         event,
         f"**⌔∮ اهلا عزيزي** - {mention}\n"
-        f"**يتم الان اعـادة تشغيـل بـوت زد ثـون يستغـرق الامر 1-2 دقيقه ▬▭ ...**",
+        f"**يتم الان اعـادة تشغيـل بـوت ريس ثـون يستغـرق الامر 1-2 دقيقه ▬▭ ...**",
     )
     await bot.disconnect()
     execl(sys.executable, sys.executable, *sys.argv)
@@ -29,10 +29,10 @@ async def _(event):
         return
     if BOTLOG:
         await event.client.send_message(
-            BOTLOG_CHATID, "#اطفاء \n" "بوت زد ثـون في وضع الاطفاء"
+            BOTLOG_CHATID, "#اطفاء \n" "بوت ريس ثـون في وضع الاطفاء"
         )
     await edit_or_reply(
-        event, "**جارٍ إيقاف تشغيل بوت زد ثـون الآن ... شغِّلني يدويًا لاحقًا**"
+        event, "**جارٍ إيقاف تشغيل بوت ريس ثـون الآن ... شغِّلني يدويًا لاحقًا**"
     )
     if HEROKU_APP is not None:
         HEROKU_APP.process_formation()["userbot"].scale(0)
