@@ -1,4 +1,4 @@
-# image search for Zed
+# image search for Ralls
 import os
 import shutil
 
@@ -52,8 +52,8 @@ async def img_sampler(event):
 async def oho(event):
   if not event.is_reply:
     return await event.edit('**- ❝ ⌊بالـرد علـى صورة ذاتيـة التدميـر 𓆰...**')
-  zzzzl1l = await event.get_reply_message()
-  pic = await zzzzl1l.download_media()
+  N7QQQ = await event.get_reply_message()
+  pic = await N7QQQ.download_media()
   await bot.send_file(BOTLOG_CHATID, pic, caption=f"""
 **- ❝ ⌊تـم حفـظ الصـورة ذاتيـة التدمير بنجـاح ☑️ 🥳𓆰...**
 
