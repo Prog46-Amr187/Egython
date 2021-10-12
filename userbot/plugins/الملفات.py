@@ -1,4 +1,4 @@
-# file summary plugin for zed  by @mrconfused edit by @ZedThon
+# file summary plugin for Ralls  by @mrconfused edit by @RallsThon
 
 import time
 
