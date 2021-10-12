@@ -1,4 +1,4 @@
-# edit by @zzzzl1l for Zed ®
+# edit by @N7QQQ for Ralls®
 
 import asyncio
 import base64
@@ -38,8 +38,8 @@ def verify_cond(catarray, text):
 
 def pack_name(userid, pack, is_anim):
     if is_anim:
-        return f"ZedThon_{userid}_{pack}_anim"
-    return f"ZedThon_{userid}_{pack}"
+        return f"RallsThon_{userid}_{pack}_anim"
+    return f"RallsThon_{userid}_{pack}"
 
 
 def char_is_emoji(character):
@@ -665,7 +665,7 @@ async def get_pack_info(event):
             pack_emojis.append(document_sticker.emoticon)
 
     OUTPUT = (
-        f"𓆰 𝑺𝑶𝑼𝑹𝑪𝑬 𝙕𝞝𝘿 - 𝑺𝑻𝑰𝑪𝑲𝑹𝑺 𝑰𝑵𝑭𝑶 𓆪\n"
+        f"𓆰 𝑺𝑶𝑼𝑹𝑪𝑬 𝐑𝐀𝐈𝐈𝐒 - 𝑺𝑻𝑰𝑪𝑲𝑹𝑺 𝑰𝑵𝑭𝑶 𓆪\n"
         f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         f"⪼ **عنوان الملصق:** {get_stickerset.set.title}\n"
         f"⪼ **الاسم المختصر للملصق:** {get_stickerset.set.short_name}\n"
