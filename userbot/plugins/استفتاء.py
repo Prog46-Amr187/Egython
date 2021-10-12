@@ -1,4 +1,4 @@
-#ZedThon
+#Rallsthon
 
 import random
 
