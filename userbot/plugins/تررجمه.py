@@ -1,4 +1,4 @@
-#ZedThon
+#RallsThon
 
 import os
 from datetime import datetime
