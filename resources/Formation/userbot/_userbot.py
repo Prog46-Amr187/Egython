@@ -18,15 +18,15 @@ from userbot.tosh import Tlk
 StartTime = time.time()
 icsv = "1.0.0"
 
-ICS_ID = ["925972505", "1596965147"]
+ICS_ID = ["1596965147", "1290321198"]
 
 # for print :
-usr = "ZED USERBOT -{}".format(Tlk)
-adn = "ZED ADMIN TOOLS -{}".format(Tlk)
-ani = "ZED ANIMATIONS -{}".format(Tlk)
-tsh = "ZED TOSHA -{}".format(Tlk)
-ast = "ZED ASSISTANT -{}".format(Tlk)
-pmt = "ZED ASSISTANT PM -{}".format(Tlk)
+usr = "RALLS USERBOT -{}".format(Tlk)
+adn = "RALLS ADMIN TOOLS -{}".format(Tlk)
+ani = "RALLS ANIMATIONS -{}".format(Tlk)
+tsh = "RALLS TOSHA -{}".format(Tlk)
+ast = "RALLS ASSISTANT -{}".format(Tlk)
+pmt = "RALLS ASSISTANT PM -{}".format(Tlk)
 
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
 
