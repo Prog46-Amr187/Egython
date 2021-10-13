@@ -1,4 +1,4 @@
-# animation code for zed edit by @zlzzl77
+# animation code for zed edit by @N7QQQ
 
 import asyncio
 from collections import deque
@@ -105,7 +105,7 @@ async def _(event):
     await event.delete()
 
 
-# edit by: @zzzzl1l
+# edit by: @N7QQQ 
 @icssbot.on(admin_cmd(pattern=r"القمر$"))
 @icssbot.on(sudo_cmd(pattern="القمر$", allow_sudo=True))
 async def test(event):
