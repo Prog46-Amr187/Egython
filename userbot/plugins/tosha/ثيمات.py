@@ -7,12 +7,12 @@ from . import *
 
 @bot.on(admin_cmd(pattern="م30"))
 @bot.on(sudo_cmd(pattern="م30", allow_sudo=True))
-async def icss(zelzal):
-    await eor(zelzal, X)
+async def icss(Ralls):
+    await eor(Ralls, X)
 
 @bot.on(admin_cmd(pattern="ثيمات"))
 @bot.on(sudo_cmd(pattern="ثيمات", allow_sudo=True))
 async def icss(Ralls):
-    await eor(Ralls, RS)
+    await eor(Ralls, ZL)
 
 
