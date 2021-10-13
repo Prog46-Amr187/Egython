@@ -1,4 +1,4 @@
-# ©source Zed - @ZlZZl77
+# ©source Ralls - @N7QQQ 
 
 from . import ALIVE_NAME
 
