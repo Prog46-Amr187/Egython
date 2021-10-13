@@ -1,5 +1,5 @@
-# Zed - Userbot
-# Owner - ZelZal
+# Ralls - Userbot
+# Owner - @RallsThon
 
 import glob
 import os
