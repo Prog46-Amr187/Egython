@@ -12,12 +12,12 @@ async def icss(Ralls):
 
 @bot.on(admin_cmd(pattern="خلفيات1"))
 @bot.on(sudo_cmd(pattern="خلفيات1", allow_sudo=True))
-async def icss(zalzal):
+async def icss(Ralls):
     await eor(Ralls, WL)
     
 @bot.on(admin_cmd(pattern="خلفيات2"))
 @bot.on(sudo_cmd(pattern="خلفيات2", allow_sudo=True))
-async def icss(zalzal):
+async def icss(Ralls):
     await eor(Ralls, BN)
 
 
