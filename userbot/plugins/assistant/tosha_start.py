@@ -15,8 +15,8 @@ from . import *
 from .. import mention
 from telegraph import Telegraph, upload_file
 
-# =================== OWNER - ZELZAL =================== #
-ALIVE_NAME = Config.ALIVE_NAME if Config.ALIVE_NAME else "@ZedThon"
+# =================== OWNER - Ralls =================== #
+ALIVE_NAME = Config.ALIVE_NAME if Config.ALIVE_NAME else "@RallsThon"
 CUSTOM_PMPERMIT_TEXT = Config.CUSTOM_PMPERMIT_TEXT
 LOAD_MYBOT = Config.LOAD_MYBOT
 Heroku = heroku3.from_key(Config.HEROKU_API_KEY)
@@ -28,7 +28,7 @@ if not os.path.isdir(path):
 telegraph = Telegraph()
 r = telegraph.create_account(short_name=Config.TELEGRAPH_SHORT_NAME)
 auth_url = r["auth_url"]
-# =================== OWNER - ZELZAL =================== #
+# =================== OWNER - Ralls =================== #
 
 # start-others
 @tgbot.on(events.NewMessage(pattern="^/start"))  # pylint: disable=oof
@@ -65,13 +65,13 @@ async def start_all(event):
                                   caption=startotherena,
                                   buttons=[
                                       [Button.inline(
-                                          "⚜️ 𝙕𝞝𝘿𝙏𝙃𝙊𝙉 - 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 ⁦⚜️", data="Icss")]
+                                          "⚜️ 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 - 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 ⁦⚜️", data="Icss")]
                                   ])
         else:
             await event.reply(startotherena,
                                      buttons=[
                                          [Button.inline(
-                                             "⚜️ 𝙕𝞝𝘿𝙏𝙃𝙊𝙉 - 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 ⁦⚜️", data="icss")]
+                                             "⚜️ 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 - 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 ⁦⚜️", data="icss")]
                                      ])
 
 
@@ -88,7 +88,7 @@ async def owner(event):
                                  [Button.inline("⚜️ الاذاعه ⚜️",
                                                 data="toshbroad")],
                                  [Button.url("⚜️ الدعم ⚜️",
-                                             "https://t.me/ZedThon")]
+                                             "https://t.me/RallsThon")]
                              ])
 
 
@@ -114,7 +114,7 @@ async def logs(event):
         caption="**Heroku** Icss Logs",
         buttons=[
             [Button.url("💠 𝙑𝙄𝙀𝙒 𝙊𝙉𝙇𝙄𝙉𝙀 💠", f"{url}")],
-            [Button.url("💠 𝘾𝙍𝘼𝙎𝙃𝙀𝘿 💠", "t.me/ZedThon")]
+            [Button.url("💠 𝘾𝙍𝘼𝙎𝙃𝙀𝘿 💠", "t.me/RallsThon")]
         ])
     await asyncio.sleep(5)
     return os.remove('logs.txt')
@@ -129,7 +129,7 @@ async def settings(event):
                              "⌔∮ ليس هناك الكثير للقيام به هنا.",
                              buttons=[
                                      [Button.inline(
-                                         "⚜️ احصل على بوت زد ثـون بنفسك ⚜️", data="deployme")]
+                                         "⚜️ احصل على بوت ريس ثـون بنفسك ⚜️", data="deployme")]
                              ])
 
 
@@ -137,22 +137,22 @@ async def settings(event):
           )  # pylint: disable=oof
 async def settings(event):
     await event.delete()
-    await event.reply(f"⌔∮ انا زد ثـون مساعد {mention}. الشخصي تستطيع الاتصال بي عن طريق هذا البوت",
+    await event.reply(f"⌔∮ انا ريس ثـون مساعد {mention}. الشخصي تستطيع الاتصال بي عن طريق هذا البوت",
                              buttons=[
                                      [Button.inline(
-                                         "⚜️ حصل على بوت زد ثـون بنفسك ⚜️", data="deployme")]
+                                         "⚜️ حصل على بوت ريس ثـون بنفسك ⚜️", data="deployme")]
                              ])
 
 
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"deployme"))
           )  # pylint: disable=oof
 async def settings(event):
-    await event.edit("** ⌔∮ هنا ستجد رابط زد ثـون ورابط التنصيب ايضا**:",
+    await event.edit("** ⌔∮ هنا ستجد رابط ريس ثـون ورابط التنصيب ايضا**:",
                      buttons=[
-                         [Button.url("🔗 رابط السورس🔗", url="https://github.com/Zedthon/zedpack")],
-                         [Button.url("🔗 رابط التنصيب 🔗", url="https://dashboard.heroku.com/new?template=https://github.com/Zedthon/zedpack/")],
+                         [Button.url("🔗 رابط السورس🔗", url="https://github.com/RallsTeam/Ralls_pack")],
+                         [Button.url("🔗 رابط التنصيب 🔗", url="https://heroku.com/deploy?template=https://github.com/RallsTeam/Ralls_pack")],
                          [Button.url("✨ الدعم ✨",
-                                     url="https://t.me/ZedThon")]
+                                     url="https://t.me/RallsThon")]
                      ])
 
 
@@ -170,7 +170,7 @@ async def settings(event):
                                          "⚜️ لتغير الايڤ وغيرها ⚜️ ⁦⁩", data="custom")]
                                  ])
     else:
-        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @ZedThon", alert=True)
+        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @RallsThon", alert=True)
 
 
 # icss zag - زغرفه اكسس
@@ -192,7 +192,7 @@ async def settings(event):
                                      "اسماء القنوات 🍇", data="chanlan")]
                                  ])
     else:
-        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @ZedThon", alert=True)
+        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @RallsThon", alert=True)
 
 
 
@@ -213,7 +213,7 @@ async def settings(event):
                                          "اسماء بنات 🍇", data="girlan")]
                                  ])
     else:
-        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @ZedThon", alert=True)
+        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @RallsThon", alert=True)
 
 
 # Boys zag - زغرفه اسماء الشباب
@@ -233,7 +233,7 @@ async def settings(event):
                                          "║ رجوع ║", data="icsname")]
                                  ])
     else:
-        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @ZedThon", alert=True)
+        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @RallsThon", alert=True)
 
 
 
@@ -283,7 +283,7 @@ async def settings(event):
                                          "║ رجوع ║", data="icsname")]
                                  ])
     else:
-        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @ZedThon", alert=True)
+        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @RallsThon", alert=True)
 
 
 
@@ -333,7 +333,7 @@ async def settings(event):
                                          "⫷ التالي ", data="icspio2")]
                                  ])
     else:
-        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @ZedThon", alert=True)
+        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @RallsThon", alert=True)
 
 
 
@@ -354,7 +354,7 @@ async def settings(event):
                                          "⫷ التالي", data="icspio3")]
                                  ])
     else:
-        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @ZedThon", alert=True)
+        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @RallsThon", alert=True)
 
 
 
@@ -375,7 +375,7 @@ async def settings(event):
                                          "⫷ التالي", data="icspio4")]
                                  ])
     else:
-        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @ZedThon", alert=True)
+        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @RallsThon", alert=True)
 
 
 
@@ -396,7 +396,7 @@ async def settings(event):
                                          "⫷ التالي", data="icspio5")]
                                  ])
     else:
-        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @ZedThon", alert=True)
+        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @RallsThon", alert=True)
 
 
 
@@ -417,7 +417,7 @@ async def settings(event):
                                          "⫷ التالي", data="icspio1")]
                                  ])
     else:
-        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @ZedThon", alert=True)
+        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @RallsThon", alert=True)
 
 
 # Boys zag - زغرفه اسماء الشباب
@@ -437,7 +437,7 @@ async def settings(event):
                                          "║ رجوع ║", data="icszag")]
                                  ])
     else:
-        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @ZedThon", alert=True)
+        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @RallsThon", alert=True)
 
 
 # Months - الاشهر
@@ -716,7 +716,7 @@ async def a_txt(event):
             mssg=f"** ⌔∮ تم تغير نص الايڤ من**\n  - `{old_alv}`\n** ⌔∮ الى **\n  - `{themssg}`\n"
             await xx.edit(mssg)
     else:
-        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @ZedThon.", alert=True)
+        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @RallsThon.", alert=True)
 
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"alv_pic"))
            )  # pylint: disable=C0321
@@ -753,7 +753,7 @@ async def alv_pic(event):
         mssg=f"**⌔∮ تم تغير الصوره بنجاح انتظر قليلا **.\n"
         await xx.edit(mssg)
     else:
-        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @ZedThon.", alert=True)
+        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @RallsThon.", alert=True)
 
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"pm_cus")))
 async def alv(event):
@@ -791,7 +791,7 @@ async def a_txt(event):
             mssg=f"**⌔∮ تم تغير رسالة الحمايه من**\n  - `{old_alv}`\n **⌔∮ الى **\n  - `{themssg}`\n"
             await xx.edit(mssg)
     else:
-        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @ZedThon", alert=True)
+        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @RallsThon", alert=True)
 
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"pm_pic"))
            )  # pylint: disable=C0321
@@ -828,4 +828,4 @@ async def alv_pic(event):
         mssg=f"**⌔∮ تم تغير صوره الحمايه الخاصه بك ✨**.\n"
         await xx.edit(mssg)
     else:
-        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @ZedThon.", alert=True)
+        await event.answer("انت لا تستطيع استخدام البوت احصل على بوتك من @RallsThon.", alert=True)
