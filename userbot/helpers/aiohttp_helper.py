@@ -1,5 +1,5 @@
-# ZED SOURCE
-# ARABIC USERBOT - BY: @zlzzl77
+# Ralls SOURCE
+# ARABIC USERBOT - BY: @N7QQQ
 
 import aiohttp
 
