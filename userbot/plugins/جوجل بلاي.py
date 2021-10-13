@@ -1,7 +1,7 @@
 """Fetch App Details from Playstore.
 .app <app_name> to fetch app details.
 .appr <app_name>  to fetch app details with Xpl0iter request link.
-  ©ZED™ - @ZlZZl77 """
+  ©Ralls™ - @N7QQQ """
 
 import bs4
 import requests
