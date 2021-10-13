@@ -1,4 +1,4 @@
-# reverse search and google search  plugin for zed
+# reverse search and google search  plugin for Ralls
 import io
 import os
 import re
