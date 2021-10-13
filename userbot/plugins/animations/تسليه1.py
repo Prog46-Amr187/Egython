@@ -1,4 +1,4 @@
-# edit by: @ZedThon for zed
+# edit by: @RallsThon for @N7QQQ 
 
 import asyncio
 from collections import deque
