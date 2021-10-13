@@ -1,4 +1,4 @@
-#    Copyright (C) zed ~ ANL0KE 2021
+#    Copyright (C) Ralls ~ ANL0KE 2021
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
 #    the Free Software Foundation, either version 3 of the License, or
@@ -62,4 +62,4 @@ async def setbot():
 
 # End For icss bot Only
 # Owner ~ ANL0KE
-# Tele ~ @Zedthon
+# Tele ~ @RallsThon
