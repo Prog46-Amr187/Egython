@@ -1,17 +1,17 @@
-#  ZED - THON
-#  TELE - @ZedThon
+#  Ralls - THON
+#  TELE - @RallsThon
 
 import time
 from datetime import datetime
 from userbot.Config import Config
 from userbot.plugins import mention
 
-# zed
-K = "https://t.me/ZedThon"
-D = "** ⌔∮ مطور بوت زد ثـون**"
+# Ralls
+K = "https://t.me/RallsThon"
+D = "** ⌔∮ مطور بوت ريس ثـون**"
 
 OWNER_ID = Config.OWNER_ID
-ALIVE_NAME = Config.ALIVE_NAME if Config.ALIVE_NAME else "@ZedThon"
+ALIVE_NAME = Config.ALIVE_NAME if Config.ALIVE_NAME else "@RallsThon"
 
 # for OWNER_ID
 OId = Config.OWNER_ID
@@ -45,8 +45,8 @@ asst_p = "https://telegra.ph/file/5adc05c0958432a117183.jpg"
 asst_c = "➥ **ASSISTANT IS:** `ONLINE`\n"
 asst_c += f"➥ **My Boss** : {Def} \n"
 asst_c += "➥ **Heroku Database** : `AWS - Working Properly`\n"
-asst_c += "➥ **Copyright** : By [𝙕𝞝𝘿𝙏𝙃𝙊𝙉](https://github.com/Zedthon)\n"
-asst_c += "[Assistant By ](https://t.me/ZedThon)"
+asst_c += "➥ **Copyright** : By [𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉](https://github.com/RallsTeam)\n"
+asst_c += "[Assistant By ](https://t.me/RallsThon)"
 
 # for ping
 def get_readable_time(seconds: int) -> str:
@@ -374,7 +374,7 @@ SetMsg = [
     "⌔∮ يتم اكمال تنصيب بوتك في @BotFather",
     "⌔∮ تم تنصيب بوتك"
 ]
-SetDec = "- 𝙕𝞝𝘿𝙏𝙃𝙊𝙉 𝘼𝙎𝙎𝙄𝙎𝙏𝘼𝙉𝙏 𝘽𝙊𝙏 🔱\n- ZED 𝘽𝙊𝙏 𝙁𝙊𝙍 ~ {}\n- 𝙎𝙊𝙐𝙍𝘾𝙀 𝘿𝙀𝙑 ~ @ZedThon 𖤨"
-SetAbt = "- 𝙎𝙊𝙐𝙍𝘾𝙀 𝙕𝞝𝘿𝙏𝙃𝙊𝙉 🔱\n- ZED 𝘽𝙊𝙏 𝙁𝙊𝙍 ~ {}"
+SetDec = "- 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 𝘼𝙎𝙎𝙄𝙎𝙏𝘼𝙉𝙏 𝘽𝙊𝙏 🔱\n- Ralls 𝘽𝙊𝙏 𝙁𝙊𝙍 ~ {}\n- 𝙎𝙊𝙐𝙍𝘾𝙀 𝘿𝙀𝙑 ~ @RallsThon 𖤨"
+SetAbt = "- 𝙎𝙊𝙐𝙍𝘾𝙀 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 🔱\n- Ralls 𝘽𝙊𝙏 𝙁𝙊𝙍 ~ {}"
 
 # This is For Icss - Userbot only!!
