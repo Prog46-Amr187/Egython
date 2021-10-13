@@ -52,7 +52,7 @@ tosh = (
 # بلاي 
 R = (
     "**𓆰**  𝙎𝙊𝙐𝙍𝘾𝙀 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉   **العـاب الاونلايـن** 🎮𓆪 \n"
-    "◐━─━─━─━─𝙕𝞝𝘿─━─━─━─━◐\n\n"
+    "◐━─━─━─𝐑𝐀𝐈𝐈𝐒─━─━─━◐\n\n"
     "  ❶ **⪼**  [حرب الفضاء 🛸](https://t.me/gamee?game=ATARIAsteroids)   \n"
     "  ❷ **⪼**  [لعبة فلابي بيرد 🐥](https://t.me/awesomebot?game=FlappyBird)   \n"
     "  ❸ **⪼**  [القط المشاكس 🐱](https://t.me/gamee?game=CrazyCat)   \n"
