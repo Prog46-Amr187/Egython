@@ -1,4 +1,4 @@
-#ZedThon
+#RallsThon
 
 import asyncio
 import os
@@ -29,7 +29,7 @@ async def install(event):
                 load_module(shortname.replace(".py", ""))
                 await edit_or_reply(
                     event,
-                    f"**⌔∮ تم اضافه الملف** `{os.path.basename(downloaded_file_name)}` **في سورس زد ثـون.** ",
+                    f"**⌔∮ تم اضافه الملف** `{os.path.basename(downloaded_file_name)}` **في سورس ريس ثـون.** ",
                 )
             else:
                 os.remove(downloaded_file_name)
@@ -55,7 +55,7 @@ async def load(event):
         except BaseException:
             pass
         load_module(shortname)
-        await edit_or_reply(event, f"**⌔∮ تم تحميـل الملف** {shortname} **في زد ثـون.**")
+        await edit_or_reply(event, f"**⌔∮ تم تحميـل الملف** {shortname} **في ريس ثـون.**")
     except Exception as e:
         await edit_or_reply(
             event,
