@@ -1,8 +1,8 @@
 """
-©zed™
+©Ralls™
 """
-#𝙕𝙚𝙙𝙏𝙝𝙤𝙣 ®
-#الملـف حقـوق وكتابـة زلـزال الهيبـه ⤶ @zzzzl1l خاص بسـورس ⤶ 𝙕𝙚𝙙𝙏𝙝𝙤𝙣
+#RallsThon ®
+#الملـف حقـوق وكتابـة علش الريس  ⤶ @N7QQQ خاص بسـورس ⤶ @RallsThon
 
 import asyncio
 import base64
