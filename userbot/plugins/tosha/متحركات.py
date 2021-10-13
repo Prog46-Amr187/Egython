@@ -1,5 +1,5 @@
 """
-©Zed : @ZedThon
+©Ralls : @RallsThon
   - Commends of All Gif
 """
 
