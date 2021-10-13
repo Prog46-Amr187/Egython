@@ -1,4 +1,4 @@
-# Zed - UserBot
+# Ralls - UserBot
 # format for plugins
 
 import math
@@ -20,18 +20,18 @@ from userbot.Config import Config
 from userbot.helpers import *
 from userbot.helpers import _format, _icsstools, _icssutils
 
-# =================== Owner - ZelZal ===================
+# =================== Owner - Ralls ===================
 
 USERID = bot.uid if Config.OWNER_ID == 0 else Config.OWNER_ID
 ALIVE_NAME = Config.ALIVE_NAME
 AUTONAME = Config.AUTONAME
 DEFAULT_BIO = Config.DEFAULT_BIO
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Zed Userbot"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Ralls Userbot"
 BOT_USERNAME = Config.TG_BOT_USERNAME
 ICSBOT = Config.TG_BOT_USERNAME
 ICSB = Config.TG_BOT_USERNAME
 
-# =================== Owner - ZelZal ===================
+# =================== Owner - Ralls ===================
 
 # mention user
 mention = f"[{DEFAULTUSER}](tg://user?id={USERID})"
@@ -42,16 +42,16 @@ TOSHA_ID = bot.me.id
 
 # Dev tag
 tosh = ( 
-    "𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 𝙕𝞝𝘿𝙏𝙃𝙊𝙉 - 𝑫𝑬𝑽𝑬𝑳𝑶𝑷𝑬𝑹 𓆪\n"
-    "𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝙕𝞝𝘿𝙏𝙃𝙊𝙉ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
-    "𓄂†  𝑫𝑬𝑽 𝑼𝑺𝑬𝑹 1 ↬ @ZlZZl77 ༗\n"
-    "𓄂†  𝑫𝑬𝑽 𝑼𝑺𝑬𝑹 2 ↬ @N7QQQ ༗\n"
-    "𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝙕𝞝𝘿𝙏𝙃𝙊𝙉ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻"
+    "𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 - 𝑫𝑬𝑽𝑬𝑳𝑶𝑷𝑬𝑹 𓆪\n"
+    "𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+    "𓄂†  𝑫𝑬𝑽 𝑼𝑺𝑬𝑹 1 ↬ @N7QQQ ༗\n"
+    "𓄂†  𝑫𝑬𝑽 𝑼𝑺𝑬𝑹 2 ↬ @A_A7A ༗\n"
+    "𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻"
 )
 
 # بلاي 
 R = (
-    "**𓆰**  𝙎𝙊𝙐𝙍𝘾𝙀 𝙕𝞝𝘿𝙏𝙃𝙊𝙉   **العـاب الاونلايـن** 🎮𓆪 \n"
+    "**𓆰**  𝙎𝙊𝙐𝙍𝘾𝙀 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉   **العـاب الاونلايـن** 🎮𓆪 \n"
     "◐━─━─━─━─𝙕𝞝𝘿─━─━─━─━◐\n\n"
     "  ❶ **⪼**  [حرب الفضاء 🛸](https://t.me/gamee?game=ATARIAsteroids)   \n"
     "  ❷ **⪼**  [لعبة فلابي بيرد 🐥](https://t.me/awesomebot?game=FlappyBird)   \n"
@@ -72,16 +72,16 @@ R = (
     "  ⓱ **⪼**  [جيت واي 🚨](https://t.me/gamee?game=Getaway)   \n"
     "  ⓲ **⪼**  [الالـوان 🔮](https://t.me/gamee?game=ColorHit)   \n"
     "  ⓳ **⪼**  [مدفع الكرات🏮](https://t.me/gamee?game=NeonBlaster)   \n\n\n"
-    "**𓄂-** 𝙎𝙊𝙐𝙍𝘾𝙀 𝘿𝙀𝙑 **⪼**  [𐇮 𝙕𝞝𝙇𝙕𝘼𝙇 آلـۘهہؚيـٰـُ͢ـُ໋۠بـ໋ۘ۠ه 𐇮](t.me/ZlZZl77)   \n"
-    "**𓆰** 𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙀𝙋𝙊 **⪼**  [𝙕𝞝𝘿𝙏𝙃𝙊𝙉](https://t.me/ZedThon/102)  "
+    "**𓄂-** 𝙎𝙊𝙐𝙍𝘾𝙀 𝘿𝙀𝙑 **⪼**  [علش الريس 𐇮](t.me/N7QQQ)   \n"
+    "**𓆰** 𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙀𝙋𝙊 **⪼**  [𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉](https://t.me/RallsThon/102)  "
 )
-K = "https://github.com/Zedthon/ZED_USERBOT"
+K = "https://github.com/RallsTeam/Ralls_pack"
 
 # Alive Bot 
 TOSH = (
-       f"**⌔∮ بوت زد ثـون يعمل بنجاح 🖤❕**\n"
+       f"**⌔∮ بوت ريس ثـون يعمل بنجاح 🖤❕**\n"
        f"**   - اصدار التليثون :** `{version.__version__}\n`"
-       f"**   - اصدار زد ثـون :** `{icsv}`\n"
+       f"**   - اصدار ريس ثـون :** `{icsv}`\n"
        f"**   - البوت المستخدم :** `{ICSB}`\n"
        f"**   - اصدار البايثون :** `{python_version()}\n`"
        f"**   - المستخدم :** {mention}\n"
@@ -219,7 +219,7 @@ async def icsa():
         dyno = f"{AppHours}h {AppMinutes}m/{hours}h {minutes}m"
     except Exception as e:
         dyno = e
-    return f"**⌔∮ معلومات بوت زد ثـون***\
+    return f"**⌔∮ معلومات بوت ريس ثـون***\
                  \n - قاعده البيانات : {check_sgnirts}\
                   \n - سودو : {sudo}\
                   \n - مدة التشغيل : {uptime}\
