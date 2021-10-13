@@ -1,5 +1,5 @@
-#ZedThon
-#الملـف حقـوق وكتابـة المطـور زلـزال الهيبـه خاص بسـورس زد ثــون
+#RallsThon
+#الملـف حقـوق وكتابـة المطـور علش الريس خاص بسـورس ريس ثــون
 #لأول مره ع تليثون أمر زغرفـه تمبلـر عدة زغـارف بوقت واحد
 
 from telethon import events
@@ -19,12 +19,12 @@ async def _(event):
     reply_to_id = await reply_id(event)
     if event.reply_to_msg_id:
         reply_to_id = await event.get_reply_message()
-    chat = "@ZedThonbbot"
+    chat = "@RallsThonbbot"
     catevent = await edit_or_reply(event, "**جـارِ الزغـرفـه💞🧸...**")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
-                events.NewMessage(incoming=True, from_users=1974043654)
+                events.NewMessage(incoming=True, from_users=2089985919)
             )
             await event.client.send_message(chat, "{}".format(input_str))
             response = await response
@@ -50,12 +50,12 @@ async def _(event):
     if not reply_message.text:
         await edit_or_reply(event, "**باضافـة الكلمـة المراد زغرفتها للأمـر .. مثال : .زخرفه + كلمـه 💞🧸.**")
         return
-    chat = "@ZedThonbbot"
+    chat = "@RallsThonbbot"
     catevent = await edit_or_reply(event, "**باضافـة الكلمـة المراد زغرفتها للأمـر .. مثال : .زخرفه + كلمـه 💞🧸.**")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
-                events.NewMessage(incoming=True, from_users=1974043654)
+                events.NewMessage(incoming=True, from_users=2089985919)
             )
             await event.client.forward_messages(chat, reply_message)
             response = await response
@@ -75,6 +75,6 @@ async def _(event):
 CMD_HELP.update(
     {
         "زخرفه": "`.زخرفه` + كلمه او بالـرد ع كلـمه :\
-      \n**الشـرح ••** زغـارف تمبلـر مامطروقـه ولأول مـره ع تليـثون أمر يزغرف عدة زغـارف بوقت واحد .. الملف حقوق زدثــون#.. . "
+      \n**الشـرح ••** زغـارف تمبلـر مامطروقـه ولأول مـره ع تليـثون أمر يزغرف عدة زغـارف بوقت واحد .. الملف حقوق ريسثــون#.. . "
     }
 )
