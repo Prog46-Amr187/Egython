@@ -1,6 +1,6 @@
 """
-©Zed : @ZedThon
-  - Watch Code For Zed
+©Ralls : @RallsThon
+  - Watch Code For Ralls
   - Commend: .فيلم
 """
 
