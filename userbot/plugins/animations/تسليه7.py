@@ -1,4 +1,4 @@
-# hack code for ZED - THON 
+# hack code for @RallsThon - @N7QQQ
 
 import asyncio
 from telethon.tl.functions.users import GetFullUserRequest
