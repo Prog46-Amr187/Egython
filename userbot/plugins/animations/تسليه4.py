@@ -1,4 +1,4 @@
-# animation4 for zed by: @ZedThon
+# animation4 for @RallsThon by: @N7QQQ
 
 import asyncio
 from . import ALIVE_NAME
