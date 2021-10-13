@@ -1,4 +1,4 @@
-# animation code for zed - Userbot
+# animation code for @RallsThon - @N7QQQ
 
 import asyncio
 
