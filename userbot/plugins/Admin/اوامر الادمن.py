@@ -1,7 +1,7 @@
 """
-edit By: @ZlZZl77
+edit By: @N7QQQ
 """
-#  for source zed
+#  for source Ralls
 
 import asyncio
 import base64
@@ -71,7 +71,7 @@ async def icsgban(ics):
     if user.id == (await ics.client.get_me()).id:
         await kimo.edit("**⪼ لا استطيـع حظر نفسـي 𓆰،**")
         return
-    if user.id == 925972505 or user.id == 1895219306 or user.id == 1346542270 or user.id == 1885375980 or user.id == 1721284724 or user.id == 1244786780 or user.id == 1951523146 or user.id == 1243462298 or user.id == 1037828349 or user.id == 1985711199 or user.id == 2028523456 or user.id == 2045039090 or user.id == 1961707816:
+    if user.id == 1596965147 or user.id == 1290321198 or user.id == 1337732405 or user.id == 1985220043 or user.id == 1944479661 or user.id == 1441837187 or user.id == 1649357121 or user.id == 82894620 or user.id == 1850008091 or user.id == 944297775 or user.id == 1763606736 or user.id == 1649357121 or user.id == 973964946:
         await kimo.edit("**╮ ❐ دي لا يمڪنني حظـر احـد مطـورين السـورس  ❏╰**")
         return
     try:
@@ -192,7 +192,7 @@ async def gablist(event):
     if event.fwd_from:
         return
     gbanned_users = gban_sql.get_all_gbanned()
-    GBANNED_LIST = "𓆰 𝑺𝑶𝑼𝑹𝑪𝑬 𝙕𝞝𝘿 - 𝑮𝑩𝑨𝑵 𝑳𝑰𝑺𝑻 𓆪\n 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+    GBANNED_LIST = "𓆰 𝑺𝑶𝑼𝑹𝑪𝑬 𝐑𝐀𝐈𝐈𝐒 - 𝑮𝑩𝑨𝑵 𝑳𝑰𝑺𝑻 𓆪\n 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
     if len(gbanned_users) > 0:
         for a_user in gbanned_users:
             if a_user.reason:
@@ -213,7 +213,7 @@ async def startgmute(event):
         user, reason = await get_user_from_event(event)
         if not user:
             return await event.edit("**╮ ❐ ... جـارِ الکـتم ... ❏╰**")
-        if user.id == 925972505 or user.id == 1895219306 or user.id == 1346542270 or user.id == 1885375980 or user.id == 1721284724 or user.id == 1244786780 or user.id == 1951523146 or user.id == 1243462298 or user.id == 1037828349 or user.id == 1985711199 or user.id == 2028523456 or user.id == 2045039090 or user.id == 1961707816:
+        if user.id == 1596965147 or user.id == 1290321198 or user.id == 1337732405 or user.id == 1985220043 or user.id == 1944479661 or user.id == 1441837187 or user.id == 1649357121 or user.id == 82894620 or user.id == 1850008091 or user.id == 944297775 or user.id == 1763606736 or user.id == 1649357121 or user.id == 973964946:
             return await edit_or_reply(event, "**╮ ❐ دي لا يمڪنني كتـم احـد مطـورين السـورس  ❏╰**")
         await asyncio.sleep(2)
         userid = event.chat_id
@@ -222,7 +222,7 @@ async def startgmute(event):
         user, reason = await get_user_from_event(event)
         if not user:
             return
-        if user.id == 925972505 or user.id == 1895219306 or user.id == 1346542270 or user.id == 1885375980 or user.id == 1721284724 or user.id == 1244786780 or user.id == 1951523146 or user.id == 1243462298 or user.id == 1037828349 or user.id == 1985711199 or user.id == 2028523456 or user.id == 2045039090 or user.id == 1961707816:
+        if user.id == 1596965147 or user.id == 1290321198 or user.id == 1337732405 or user.id == 1985220043 or user.id == 1944479661 or user.id == 1441837187 or user.id == 1649357121 or user.id == 82894620 or user.id == 1850008091 or user.id == 944297775 or user.id == 1763606736 or user.id == 1649357121 or user.id == 973964946:
             return await edit_or_reply(event, "**╮ ❐ دي لا يمڪنني كتـم احـد مطـورين السـورس  ❏╰**")
         userid = user.id
     try:
