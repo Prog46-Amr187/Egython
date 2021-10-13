@@ -1,6 +1,6 @@
-#𝙕𝙚𝙙𝙏𝙝𝙤𝙣 ®
-#الملـف حقـوق وكتابـة زلـزال الهيبـه ⤶ @zzzzl1l خاص بسـورس ⤶ 𝙕𝙚𝙙𝙏𝙝𝙤𝙣
-#تعـديل بنيـتي 𝙈
+#RallsThon ®
+#الملـف حقـوق وكتابـة زلـزال الهيبـه ⤶ @N7QQQ خاص بسـورس ⤶ RallsThon
+#تعـديل الريس علش
 
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
@@ -26,18 +26,18 @@ async def _(event):
         return await edit_or_reply(
             event, "**╮ .فيس بالـرد ﮼؏ الرسالـٓھہ للبحث او .فيسبوك + الرابـط ...𓅫╰**"
         )
-    chat = "@ZedFbbot"
+    chat = "@RallsFbbot"
     catevent = await edit_or_reply(event, "**╮•⎚ جـارِ التحميل ... 🧸🎈**")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
-                events.NewMessage(incoming=True, from_users=2020381350)
+                events.NewMessage(incoming=True, from_users=2099043297)
             )
             await event.client.send_message(chat, "{}".format(input_str))
             response = await response
             await event.client.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
-            await catevent.edit("**╮•⎚ تحـقق من انـك لم تقـم بحظر البوت @ZedFbbot .. ثم اعـد استخدام الامـر ...🤖♥️**")
+            await catevent.edit("**╮•⎚ تحـقق من انـك لم تقـم بحظر البوت @RallsFbbot .. ثم اعـد استخدام الامـر ...🤖♥️**")
             return
         if response.text.startswith("I can't find that"):
             await catevent.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
@@ -57,19 +57,19 @@ async def _(event):
     if not reply_message.text:
         await edit_or_reply(event, "**بالـرد على الرابـط حمبـي 🧸🎈**")
         return
-    chat = "@ZedFbbot"
+    chat = "@RallsFbbot"
     catevent = await edit_or_reply(event, "**╮•⎚ جـارِ التحميل ... 🧸🎈**")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
-                events.NewMessage(incoming=True, from_users=2020381350)
+                events.NewMessage(incoming=True, from_users=2099043297)
             )
             await event.client.forward_messages(chat, reply_message)
             response = await response
             await event.client.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
             await catevent.edit(
-                "**╮•⎚ تحـقق من انـك لم تقـم بحظر البوت @ZedFbbot .. ثم اعـد استخدام الامـر ...🤖♥️**"
+                "**╮•⎚ تحـقق من انـك لم تقـم بحظر البوت @RallsFbbot .. ثم اعـد استخدام الامـر ...🤖♥️**"
             )
             return
         if response.text.startswith(""):
