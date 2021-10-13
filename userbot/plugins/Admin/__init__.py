@@ -1,3 +1,3 @@
-# ZED - USERBOT
-# OWNER - ZelZal
+# Ralls - USERBOT
+# OWNER - N7QQQ
 # All admins code from catuserbot 
