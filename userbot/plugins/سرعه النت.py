@@ -1,4 +1,4 @@
-# speedtest for zed edit by @ZedThon
+# speedtest for Ralls edit by @RallsThon
 
 from datetime import datetime
 
