@@ -24,7 +24,7 @@ async def cmd_list(event):
     input_str = event.pattern_match.group(1)
     if input_str == "text":
         string = (
-            "المجمـوع {count} أمر تم ايجاد {plugincount} اضافـه لبوت زد ثـون\n\n"
+            "المجمـوع {count} أمر تم ايجاد {plugincount} اضافـه لبوت ريس ثـون\n\n"
         )
         catcount = 0
         plugincount = 0
@@ -47,7 +47,7 @@ async def cmd_list(event):
                 .get("key")
             )
             url = f"https://nekobin.com/{key}"
-            reply_text = f"**⌔∮ جميع الاوامر لبوت زد ثـون تستطيـع الحصول عليها [هـنا]({url})**"
+            reply_text = f"**⌔∮ جميع الاوامر لبوت ريس ثـون تستطيـع الحصول عليها [هـنا]({url})**"
             await event.edit(reply_text)
             return
         await event.edit(string.format(count=catcount, plugincount=plugincount))
