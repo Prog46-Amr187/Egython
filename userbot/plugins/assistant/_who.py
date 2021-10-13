@@ -1,6 +1,6 @@
-# Zed - Userbot
-# Whois for Zed - Userbot
-# edit ~ <@zlzzl77>
+# Ralls - Userbot
+# Whois for Ralls - Userbot
+# edit ~ <@N7QQQ>
 # from ~ <ULTRA-X>
 
 from telethon.tl.functions.users import GetFullUserRequest
