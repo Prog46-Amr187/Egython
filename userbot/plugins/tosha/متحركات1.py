@@ -1,5 +1,5 @@
 """
-©Zed : @ZedThon
+©Ralls : @RallsThon
   - Tumblr Gif -1
   - Tumblr Gif -2
   - Tumblr Gif -3
@@ -22,7 +22,7 @@ async def tmgif(kim):
     kimid = await rd(kim)
     if tm_gif:
         kim_c = f"**{TMTE}**\n"
-        kim_c += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧℤ𝔼𝔻𝕋ℍ𝕆ℕⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+        kim_c += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         kim_c += f"**↫ المتـحركه الاولى 𓆰.**"
         await kim.client.send_file(kim.chat_id, tm_gif, caption=kim_c, reply_to=kimid)
 
@@ -35,7 +35,7 @@ async def tmgif(lon):
     lonid = await rd(lon)
     if tm_gif2:
         ics_c = f"**{TMTE}**\n"
-        ics_c += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧℤ𝔼𝔻𝕋ℍ𝕆ℕⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+        ics_c += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         ics_c += f"**↫ المتـحركه الثانيه 𓆰.**"
         await lon.client.send_file(lon.chat_id, tm_gif2, caption=ics_c, reply_to=lonid)
 
@@ -48,7 +48,7 @@ async def tmgif(i):
     sic_id = await rd(i)
     if tm_gif3:
         tumc = f"**{TMTE}**\n"
-        tumc += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧℤ𝔼𝔻𝕋ℍ𝕆ℕⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+        tumc += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         tumc += f"**↫ المتـحركه الثالثه 𓆰.**"
         await i.client.send_file(i.chat_id, tm_gif3, caption=tumc, reply_to=sic_id)
 
@@ -61,7 +61,7 @@ async def tmgif(lon):
     reply_to_id = await rd(lon)
     if tm_gif4:
         tumc = f"**{TMTE}**\n"
-        tumc += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧℤ𝔼𝔻𝕋ℍ𝕆ℕⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+        tumc += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         tumc += f"**↫ المتـحركه الرابعه 𓆰.**"
         await lon.client.send_file(
             lon.chat_id, tm_gif4, caption=tumc, reply_to=reply_to_id
@@ -77,7 +77,7 @@ async def tmgif(tosh):
     reply_to_id = await rd(tosh)
     if tm_gif5:
         tumc = f"**{TMTE}**\n"
-        tumc += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧℤ𝔼𝔻𝕋ℍ𝕆ℕⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+        tumc += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         tumc += f"**↫ المتـحركه الخامسه 𓆰.**"
         await tosh.client.send_file(
             tosh.chat_id, tm_gif5, caption=tumc, reply_to=reply_to_id
@@ -93,7 +93,7 @@ async def tmgif(kimo):
     reply_to_id = await rd(kimo)
     if tm_gif6:
         tumc = f"**{TMTE}**\n"
-        tumc += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧℤ𝔼𝔻𝕋ℍ𝕆ℕⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+        tumc += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         tumc += f"**↫ المتـحركه السادسه 𓆰.**"
         await kimo.client.send_file(
             kimo.chat_id, tm_gif6, caption=tumc, reply_to=reply_to_id
@@ -108,7 +108,7 @@ async def tmgif(ics):
     reply_to_id = await rd(ics)
     if tm_gif7:
         tumc = f"**{TMTE}**\n"
-        tumc += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧℤ𝔼𝔻𝕋ℍ𝕆ℕⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+        tumc += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         tumc += f"**↫ المتـحركه السابعه 𓆰.**"
         await ics.client.send_file(
             ics.chat_id, tm_gif7, caption=tumc, reply_to=reply_to_id
