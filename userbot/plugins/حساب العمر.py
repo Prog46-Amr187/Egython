@@ -1,4 +1,4 @@
-#ZedThon
+#RallsThon
 
 from datetime import datetime
 
