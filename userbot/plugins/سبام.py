@@ -1,5 +1,5 @@
-# for -<*>~ SOURCE ZED ~<*>-
-# edit By: @ZedThon
+# for -<*>~ SOURCE Ralls ~<*>-
+# edit By: @RallsThon
 
 import asyncio
 import os
