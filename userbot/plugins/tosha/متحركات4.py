@@ -1,4 +1,4 @@
-# KutGif for Z by: @ZedThon
+# KutGif for Z by: @RallsThon
 
 from .. import reply_id as rd
 from . import *
@@ -12,7 +12,7 @@ async def kutgif(icss):
     Ti = await rd(icss)
     if kut_gif:
         icss_caption = f"**{KUTTE}**\n"
-        icss_caption += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧℤ𝔼𝔻𝕋ℍ𝕆ℕⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+        icss_caption += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         icss_caption += f"**↫ المتـحركه الاولى 𓆰.**"
         await icss.client.send_file(
             icss.chat_id, kut_gif, caption=icss_caption, reply_to=Ti
@@ -26,7 +26,7 @@ async def kutgif(icss):
     th = await rd(icss)
     if kut_gif2:
         icss_caption = f"**{KUTTE}**\n"
-        icss_caption += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧℤ𝔼𝔻𝕋ℍ𝕆ℕⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+        icss_caption += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         icss_caption += f"**↫ المتـحركه الثانيه 𓆰.**"
         await icss.client.send_file(
             icss.chat_id, kut_gif2, caption=icss_caption, reply_to=th
@@ -40,7 +40,7 @@ async def kutgif(icss):
     kh = await rd(icss)
     if kut_gif3:
         icss_caption = f"**{KUTTE}**\n"
-        icss_caption += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧℤ𝔼𝔻𝕋ℍ𝕆ℕⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+        icss_caption += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         icss_caption += f"**↫ المتـحركه الثالثه 𓆰.**"
         await icss.client.send_file(
             icss.chat_id, kut_gif3, caption=icss_caption, reply_to=kh
@@ -54,7 +54,7 @@ async def kutgif(icss):
     wh = await rd(icss)
     if kut_gif4:
         kutc = f"**{KUTTE}**\n"
-        kutc += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧℤ𝔼𝔻𝕋ℍ𝕆ℕⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+        kutc += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         kutc += f"**↫ المتـحركه الرابعه 𓆰.**"
         await icss.client.send_file(
             icss.chat_id, kut_gif4, caption=kutc, reply_to=wh
@@ -68,7 +68,7 @@ async def kutgif(icss):
     ih = await rd(icss)
     if kut_gif5:
         kutc = f"**{KUTTE}**\n"
-        kutc += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧℤ𝔼𝔻𝕋ℍ𝕆ℕⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+        kutc += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         kutc += f"**↫ المتـحركه الخامسه 𓆰.**"
         await icss.client.send_file(
             icss.chat_id, kut_gif5, caption=kutc, reply_to=ih
@@ -83,7 +83,7 @@ async def kutgif(icss):
     uh = await rd(icss)
     if kut_gif6:
         kutc = f"**{KUTTE}**\n"
-        kutc += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧℤ𝔼𝔻𝕋ℍ𝕆ℕⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+        kutc += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         kutc += f"**↫ المتـحركه السادسه 𓆰.**"
         await icss.client.send_file(
             icss.chat_id, kut_gif6, caption=kutc, reply_to=uh
@@ -98,7 +98,7 @@ async def kutgif(icss):
     oh = await rd(icss)
     if kut_gif7:
         kutc = f"**{KUTTE}**\n"
-        kutc += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧℤ𝔼𝔻𝕋ℍ𝕆ℕⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+        kutc += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         kutc += f"**↫ المتـحركه السابعه 𓆰.**"
         await icss.client.send_file(
             icss.chat_id, kut_gif7, caption=kutc, reply_to=oh
