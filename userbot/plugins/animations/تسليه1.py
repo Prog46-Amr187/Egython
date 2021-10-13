@@ -1,11 +1,11 @@
-# edit by: @RallsThon for @N7QQQ 
+# edit by: @RallsThon for @N7QQQ
 
 import asyncio
 from collections import deque
 
 from . import ALIVE_NAME
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "zed"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Ralls"
 
 
 @icssbot.on(admin_cmd(pattern="غبي$"))
@@ -118,7 +118,7 @@ async def _(event):
         "------------------>",
         "------>;(^。^)ノ",
         "(￣ー￣) DEAD",
-        "`Targeted user killed by Headshot 😈.😈.😈.😈.😈.😈.😈......`\n '#Zed_Reacts_Online'\n",
+        "`Targeted user killed by Headshot 😈.😈.😈.😈.😈.😈.😈......`\n '#Ralls_Reacts_Online'\n",
     ]
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
