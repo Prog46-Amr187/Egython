@@ -72,7 +72,7 @@ Which 𝒅𝒐𝒏'𝒕 𝑬𝒙𝒊𝒔𝒕.
 ]
 
 # thx for @Uzumaki_Naruto_XD
-# edit @zedthon
+# edit @RallsThon
 
 
 @icssbot.on(admin_cmd(pattern="انكلش"))
