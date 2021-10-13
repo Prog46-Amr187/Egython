@@ -1,5 +1,5 @@
 """
-©Zed : @ZedThon
+©Ralls : @RallsThon
   - Commends of All Theme
 """
 
@@ -12,7 +12,7 @@ async def icss(zelzal):
 
 @bot.on(admin_cmd(pattern="ثيمات"))
 @bot.on(sudo_cmd(pattern="ثيمات", allow_sudo=True))
-async def icss(zelzal):
-    await eor(zelzal, ZL)
+async def icss(Ralls):
+    await eor(Ralls, RS)
 
 
