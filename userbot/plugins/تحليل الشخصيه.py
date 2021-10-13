@@ -1,4 +1,4 @@
-#ZedThon
+#RallsThon
 
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
