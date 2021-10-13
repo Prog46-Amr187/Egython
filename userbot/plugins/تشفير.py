@@ -1,4 +1,4 @@
-# ZedThon module containing hash and encode/decode commands.
+# RallsThon module containing hash and encode/decode commands.
 
 import asyncio
 import base64
