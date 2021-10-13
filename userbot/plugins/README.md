@@ -11,8 +11,8 @@ H = "Hi im Ralls"
 @bot.on(
     icss_cmd(pattern="hello")
 )
-async def hi(zed):
-    await eor(zed, H)
+async def hi(Ralls):
+    await eor(Ralls, H)
 ```
 
 - استمتعو به 💕
