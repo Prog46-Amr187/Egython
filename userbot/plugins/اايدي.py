@@ -120,7 +120,7 @@ async def fetch_info(replied_user, event):
     caption += f"\n<b> {ZEDM}| الـمجموعات المشتـركة ⇦ </b> {common_chat} \n"
     caption += f"<b> {ZEDM}| البايـو    ⇦ </b> {user_bio} \n"
     caption += f"<b> ٴ•━─━─━─━─━─━─━─━─━• </b>\n"
-    caption += f"<b> 𓆩 𝙎𝙊𝙐𝙍𝘾๏͈͈͈͈͈͈͈𝐑𝐀𝐈𝐈𝐒 𖤓̟̟̟̟̟̟̥̥̥̥̟͜͡✪ 𓆪 </b> - @Rallsthon "
+    caption += f"<b> 𓆩 𝙎𝙊𝙐𝙍𝘾 𝐑𝐀𝐈𝐈𝐒 𓆪 </b> - @Rallsthon "
     return photo, caption
 
 
