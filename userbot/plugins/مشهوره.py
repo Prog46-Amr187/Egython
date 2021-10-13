@@ -1,5 +1,5 @@
-#𝙕𝙚𝙙𝙏𝙝𝙤𝙣 ®
-#الملـف حقـوق وكتابـة زلـزال الهيبـه ⤶ @zzzzl1l خاص بسـورس ⤶ 𝙕𝙚𝙙𝙏𝙝𝙤𝙣
+#RallsThon ®
+#الملـف حقـوق وكتابـة علش الريس ⤶ @N7QQQ خاص بسـورس ⤶ RallsThon
 #الملـف متعـوب عليه تخمـط اذكر المصـدر
 
 import os
@@ -16,7 +16,7 @@ from . import mention
 
 TMP_DOWNLOAD_DIRECTORY = Config.TMP_DOWNLOAD_DIRECTORY
 
-FANAN = "<b> 𓆩 𝗦𝗢𝗨𝗥𝗖𝗘 𝙕𝞝𝘿 - 💞👰🏻‍♀💞 𓆪 </b>"
+FANAN = "<b> 𓆩 𝗦𝗢𝗨𝗥𝗖𝗘 𝐑𝐀𝐈𝐈𝐒 - 💞👰🏻‍♀💞 𓆪 </b>"
 VANAN = "<b> ⋄︙افيشش 🥺💘 </b>"
 sts_fanan = "https://telegra.ph/file/1f79aad6235f08ea76166.jpg"
 sts_fanan2 = "https://telegra.ph/file/e04b22171d7bb524e7f44.jpg" 
@@ -42,12 +42,12 @@ ZEED_IMG = sts_fanan or sts_fanan2 or sts_fanan3 or sts_fanan4 or sts_fanan5
 @bot.on(admin_cmd(pattern="مشهوره(?: |$)(.*)"))
 @bot.on(sudo_cmd(pattern="مشهوره(?: |$)(.*)", allow_sudo=True))
 async def who(event):
-    zed = await eor(event, "⇆")
+    Ralls = await eor(event, "⇆")
     replied_user = await get_user(event)
     try:
         ZEED_IMG, caption = await fetch_info(replied_user, event)
     except AttributeError:
-        await eor(zed, "..")
+        await eor(Ralls, "..")
         return
     message_id_to_reply = event.message.reply_to_msg_id
     if not message_id_to_reply:
@@ -63,7 +63,7 @@ async def who(event):
             parse_mode="html",
         )
     except TypeError:
-        await zed.edit(caption, parse_mode="html")
+        await Ralls.edit(caption, parse_mode="html")
 
 
 async def get_user(event):
