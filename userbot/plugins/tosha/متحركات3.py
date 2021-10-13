@@ -1,4 +1,4 @@
-# LOVEGif for Z by: @ZedThon
+# LOVEGif for Z by: @RallsThon
 
 from .. import reply_id as rd
 from . import *
@@ -12,7 +12,7 @@ async def vegif(icss):
     Ti = await rd(icss)
     if ve_gif:
         icss_caption = f"**{LOVE}**\n"
-        icss_caption += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧℤ𝔼𝔻𝕋ℍ𝕆ℕⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+        icss_caption += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         icss_caption += f"**↫ المتـحركه الاولى 𓆰.**"
         await icss.client.send_file(
             icss.chat_id, ve_gif, caption=icss_caption, reply_to=Ti
@@ -26,7 +26,7 @@ async def vegif(icss):
     th = await rd(icss)
     if ve_gif2:
         icss_caption = f"**{LOVE}**\n"
-        icss_caption += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧℤ𝔼𝔻𝕋ℍ𝕆ℕⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+        icss_caption += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         icss_caption += f"**↫ المتـحركه الثانيه 𓆰.**"
         await icss.client.send_file(
             icss.chat_id, ve_gif2, caption=icss_caption, reply_to=th
@@ -40,7 +40,7 @@ async def vegif(icss):
     kh = await rd(icss)
     if ve_gif3:
         icss_caption = f"**{LOVE}**\n"
-        icss_caption += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧℤ𝔼𝔻𝕋ℍ𝕆ℕⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+        icss_caption += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         icss_caption += f"**↫ المتـحركه الثالثه 𓆰.**"
         await icss.client.send_file(
             icss.chat_id, ve_gif3, caption=icss_caption, reply_to=kh
@@ -54,7 +54,7 @@ async def vegif(icss):
     wh = await rd(icss)
     if ve_gif4:
         vec = f"**{LOVE}**\n"
-        vec += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧℤ𝔼𝔻𝕋ℍ𝕆ℕⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+        vec += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         vec += f"**↫ المتـحركه الرابعه 𓆰.**"
         await icss.client.send_file(
             icss.chat_id, ve_gif4, caption=vec, reply_to=wh
@@ -68,7 +68,7 @@ async def vegif(icss):
     ih = await rd(icss)
     if ve_gif5:
         vec = f"**{LOVE}**\n"
-        vec += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧℤ𝔼𝔻𝕋ℍ𝕆ℕⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+        vec += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         vec += f"**↫ المتـحركه الخامسه 𓆰.**"
         await icss.client.send_file(
             icss.chat_id, ve_gif5, caption=vec, reply_to=ih
@@ -83,7 +83,7 @@ async def vegif(icss):
     uh = await rd(icss)
     if ve_gif6:
         vec = f"**{LOVE}**\n"
-        vec += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧℤ𝔼𝔻𝕋ℍ𝕆ℕⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+        vec += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         vec += f"**↫ المتـحركه السادسه 𓆰.**"
         await icss.client.send_file(
             icss.chat_id, ve_gif6, caption=vec, reply_to=uh
@@ -98,7 +98,7 @@ async def vegif(icss):
     oh = await rd(icss)
     if ve_gif7:
         vec = f"**{LOVE}**\n"
-        vec += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧℤ𝔼𝔻𝕋ℍ𝕆ℕⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
+        vec += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         vec += f"**↫ المتـحركه السابعه 𓆰.**"
         await icss.client.send_file(
             icss.chat_id, ve_gif7, caption=vec, reply_to=oh
