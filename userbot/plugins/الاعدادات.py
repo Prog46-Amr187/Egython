@@ -85,7 +85,7 @@ async def _(event):
     )
     stdout, stderr = await process.communicate()
     o = stdout.decode()
-    OUTPUT = f"**⌔∮ [𝙎𝙊𝙐𝙍𝘾๏͈͈͈͈͈͈͈𝐑𝐀𝐈𝐈𝐒 𖤓̟̟̟̟̟̟̥̥̥̥̟͜͡✪](tg://need_update_for_some_feature/) الالاضافات:**\n{o}"
+    OUTPUT = f"**⌔∮ [𝙎𝙊𝙐𝙍𝘾 𝐑𝐀𝐈𝐈𝐒](tg://need_update_for_some_feature/) الالاضافات:**\n{o}"
     if len(OUTPUT) > Config.MAX_MESSAGE_SIZE_LIMIT:
         with io.BytesIO(str.encode(OUTPUT)) as out_file:
             out_file.name = "env.text"
@@ -151,7 +151,7 @@ async def _(event):
     stdout, stderr = await process.communicate()
     o = stdout.decode()
     OUTPUT = (
-        f"**[𝙎𝙊𝙐𝙍𝘾๏͈͈͈͈͈͈͈𝐑𝐀𝐈𝐈𝐒 𖤓̟̟̟̟̟̟̥̥̥̥̟͜͡✪](tg://need_update_for_some_feature/) Environment Module:**\n\n\n{o}"
+        f"**[𝙎𝙊𝙐𝙍𝘾 𝐑𝐀𝐈𝐈𝐒](tg://need_update_for_some_feature/) Environment Module:**\n\n\n{o}"
     )
     if len(OUTPUT) > Config.MAX_MESSAGE_SIZE_LIMIT:
         with io.BytesIO(str.encode(OUTPUT)) as out_file:
@@ -189,7 +189,7 @@ async def _(event):
     )
     stdout, stderr = await process.communicate()
     o = stdout.decode()
-    OUTPUT = f"**[𝙎𝙊𝙐𝙍𝘾๏͈͈͈͈͈͈͈𝐑𝐀𝐈𝐈𝐒 𖤓̟̟̟̟̟̟̥̥̥̥̟͜͡✪](tg://need_update_for_some_feature/) , تم حساب سرعة السيرفر:**\n{o}"
+    OUTPUT = f"**[𝙎𝙊𝙐𝙍𝘾 𝐑𝐀𝐈𝐈𝐒](tg://need_update_for_some_feature/) , تم حساب سرعة السيرفر:**\n{o}"
     if len(OUTPUT) > Config.MAX_MESSAGE_SIZE_LIMIT:
         with io.BytesIO(str.encode(OUTPUT)) as out_file:
             out_file.name = "env.text"
