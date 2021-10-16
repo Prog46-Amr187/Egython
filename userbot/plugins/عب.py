@@ -18,4 +18,4 @@ async def _(event):
         await asyncio.sleep(0.8)
         await event.edit("ولاشوف")
         await asyncio.sleep(0.6)
-        await event.edit("طول ه")
+        await event.edit("طوله ")
