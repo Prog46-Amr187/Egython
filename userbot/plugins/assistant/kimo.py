@@ -1,5 +1,5 @@
 #  Ralls - USERBOT
-#  TELE - @N7QQQ
+#  TELE - @QQ070
 
 from . import Devt
 
