@@ -41,7 +41,7 @@ startowner = f"** ⌔∮ اهلا بك مجدداً {ALIVE_NAME}. اختر اح�
 
 # for alive
 Def = str(ALIVE_NAME) if ALIVE_NAME else "Icss - User"
-asst_p = "https://telegra.ph/file/5adc05c0958432a117183.jpg"
+asst_p = "https://telegra.ph/file/be9f9a2283b1db8b2e3ae.jpg"
 asst_c = "➥ **ASSISTANT IS:** `ONLINE`\n"
 asst_c += f"➥ **My Boss** : {Def} \n"
 asst_c += "➥ **Heroku Database** : `AWS - Working Properly`\n"
