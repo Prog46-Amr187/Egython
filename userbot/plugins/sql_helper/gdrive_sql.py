@@ -1,5 +1,5 @@
 """
-credits to @N7QQQ 
+credits to @QQ070
 """
 # Arabic userbot - @RallsThon.
 
