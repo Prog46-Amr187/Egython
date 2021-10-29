@@ -1,6 +1,6 @@
 # Ralls - Userbot
 # Whois for Ralls - Userbot
-# edit ~ <@N7QQQ>
+# edit ~ <@QQ070>
 # from ~ <ULTRA-X>
 
 from telethon.tl.functions.users import GetFullUserRequest
