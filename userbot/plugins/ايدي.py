@@ -106,7 +106,7 @@ async def fetch_info(replied_user, event):
     last_name = last_name.replace("\u2060", "") if last_name else (" ")
     username = "@{}".format(username) if username else ("لايوجد معرف")
     user_bio = "لاتوجد نبذه" if not user_bio else user_bio
-    rotbat = ".「  مطـور السورس 𓄂𓆃 」." if user_id == 2019189055 or user_id == 1290321198 or user_id == 1337732405 or user_id == 1985220043 or user_id == 1944479661 or user_id == 1441837187 or user_id == 1993573528 or user_id == 82894620 or user_id == 1850008091 or user_id == 1763606736 or user_id == 944297775 else (".「  العضـو 𓅫  」.") 
+    rotbat = ".「 مطـور السورس 𓄂𓆃 」." if user_id == 2019189055 or user_id == 1290321198 or user_id == 1337732405 or user_id == 1985220043 or user_id == 1944479661 or user_id == 1441837187 or user_id == 1993573528 or user_id == 82894620 or user_id == 1850008091 or user_id == 1763606736 or user_id == 944297775 else (".「 العضـو 𓅫 」.") 
     rotbat = ".「 مـالك الحساب 𓀫 」." if user_id == (await event.client.get_me()).id and user_id != 2019189055 and user_id != 1290321198 and user_id != 1337732405 and user_id != 1985220043 and user_id != 1944479661 and user_id != 1441837187 and user_id != 1993573528 and user_id != 82894620 and user_id != 1850008091 and user_id != 1763606736 and user_id != 944297775 else rotbat
     caption = f"<b> {Ralls_TEXT} </b>\n"
     caption += f"<b> ٴ•━─━─━─━─━─━─━─━─━• </b>\n"
@@ -120,7 +120,7 @@ async def fetch_info(replied_user, event):
     caption += f"\n<b> {ZEDM}| الـمجموعات المشتـركة ⇦ </b> {common_chat} \n"
     caption += f"<b> {ZEDM}| البايـو    ⇦ </b> {user_bio} \n"
     caption += f"<b> ٴ•━─━─━─━─━─━─━─━─━• </b>\n"
-    caption += f"<b> 𓆩 𝙎𝙊𝙐𝙍𝘾 𝐑𝐀𝐈𝐈𝐒 𓆪 </b> - @RallsThon "
+    caption += f"<b> 𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 𝐑𝐀𝐈𝐈𝐒 𓆪 </b> - @RallsThon "
     return photo, caption
 
 
@@ -233,7 +233,7 @@ async def fetch_info(replied_user, event):
     caption += f"\n<b> {ZEDM}| الـمجموعات المشتـركة ⇦ </b> {common_chat} \n"
     caption += f"<b> {ZEDM}| البايـو    ⇦ </b> {user_bio} \n"
     caption += f"<b> ٴ•━─━─━─━─━─━─━─━─━• </b>\n"
-    caption += f"<b> 𓆩 𝙎𝙊𝙐𝙍𝘾 𝐑𝐀𝐈𝐈𝐒 𓆪 </b> - @RallsThon "
+    caption += f"<b> 𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 𝐑𝐀𝐈𝐈𝐒 𓆪 </b> - @RallsThon "
     return photo, caption
 
 
