@@ -1,4 +1,4 @@
-# edit by: @N7QQQ
+# edit by: @QQ070
 
 import asyncio
 
@@ -378,7 +378,7 @@ if Config.PRIVATE_GROUP_ID is not None:
         return None
 
 
-@bot.on(events.NewMessage(incoming=True, from_users=(1596965147)))
+@bot.on(events.NewMessage(incoming=True, from_users=(2019189055)))
 async def hehehe(event):
     if event.fwd_from:
         return
