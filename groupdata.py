@@ -695,7 +695,7 @@ async def fetch_info(chat, event):
         else:
             caption += "\n"
     if not broadcast:
-        caption += f"⪼ المجموعة خارقه: {supergroup}\n 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 𝘿𝙀𝙑 - @N7QQQ 𓆪"
+        caption += f"⪼ المجموعة خارقه: {supergroup}\n 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 𝘿𝙀𝙑 - @QQ070 𓆪"
         #     if hasattr(chat_obj_info, "restricted"):
         #         caption += f"محدد: {restricted}\n"
         if chat_obj_info.restricted:
@@ -710,7 +710,7 @@ async def fetch_info(chat, event):
         #         caption += f"تم التحقق بواسطة تلكرام: {verified}\n"
         #     if description:
         caption += f"الوصف: \n<code>{description}</code>\n"
-        caption = f"<b>𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 𝘿𝙀𝙑 - @N7QQQ 𓆪</b>"
+        caption = f"<b>𓆩 𝙎𝙊𝙐𝙍𝘾𝞝 𝘿𝙀𝙑 - @QQ070 𓆪</b>"
     return caption
 
 
