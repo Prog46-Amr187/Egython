@@ -1,8 +1,8 @@
 """
 ©Ralls™
 """
-#RallsThon ®
-#الملـف حقـوق وكتابـة علش الريس  ⤶ @N7QQQ خاص بسـورس ⤶ @RallsThon
+#𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 ®
+#الملـف حقـوق وكتابـة زلـزال الهيبـه ⤶ @QQ070 خاص بسـورس ⤶ 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉
 
 import asyncio
 import base64
@@ -334,7 +334,7 @@ async def _(event):
             os.remove(new_required_file_name)
             await event.delete()
             
-#ZedThon 
+#RallsThon 
 @icss.on(icss_cmd(pattern="متحركه ?(.*)"))
 @bot.on(sudo_cmd(pattern="متحركه ?(.*)", allow_sudo=True))
 async def gifs(ult):
