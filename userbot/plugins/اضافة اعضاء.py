@@ -75,7 +75,7 @@ async def get_users(event):
         eva = await event.reply("**╮  جـاري الاضـافه .. الࢪجـاء الانتظـار ...𓅫╰**")
     else:
         eva = await event.edit("**╮  جـاري الاضـافه .. الࢪجـاء الانتظـار ...𓅫╰**.")
-    Rallsthon = await get_chatinfo(event)
+    RallsTHON = await get_chatinfo(event)
     chat = await event.get_chat()
     if event.is_private:
         return await eva.edit("**╮  لا استطـيع اضافـة الاعضـاء هـنا 𓅫╰**")
@@ -86,7 +86,7 @@ async def get_users(event):
     await eva.edit(
         "**╮  حـالة الإضافـه :**\n\n**╮  جـاري جـمع معـلومات الاعضـاء ...⏳**"
     )
-    async for user in event.client.iter_participants( Rallsthon.full_chat.id):
+    async for user in event.client.iter_participants( RallsTHON.full_chat.id):
         try:
             if error.startswith("Too"):
                 return (
