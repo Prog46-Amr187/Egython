@@ -24,9 +24,9 @@ PMPERMIT_PIC = Config.PMPERMIT_PIC or None
 ICSS_PIC = (
     PMPERMIT_PIC
     if PMPERMIT_PIC
-    else "https://telegra.ph/file/f72cde9805f01e0bf04ed.jpg"
+    else "https://telegra.ph/file/be9f9a2283b1db8b2e3ae.jpg"
 )
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "zedbot"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Ralls1_bot"
 USER_BOT_WARN_ZERO = "⪼ لقد حذرتك من تكرار الرسائل . الآن تم حظرك والإبلاغ عنك حتى إشعار آخر.\n**- #ججـاو 🚶🏼‍♂️❕،** "
 
 
@@ -340,7 +340,7 @@ if Config.PRIVATE_GROUP_ID is not None:
             else:
 
                 USER_BOT_NO_WARN = (
-                    f"𓆩𝙎𝙊𝙐𝙍𝘾𝙀 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 - 𝑷𝑴 𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀𓆪\n◐━─━─━─𝐑𝐀𝐈𝐈𝐒─━─━─━◐\n\n❞ **هها هلو**  {mention} ❝\n\n **⤶ انا مشغـول حـالياً لا تقـم بازعـاجي وارسـال رسـائل كثيـره والا سـوف يتم حظـرك تلقـائياً.....**"
+                    f"𓆩𝙎𝙊𝙐𝙍𝘾𝙀 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 - 𝑷𝑴 𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀𓆪\n◐━─━─━─━─𝐑𝐀𝐈𝐈𝐒─━─━─━─━◐\n\n❞ **هها هلو**  {mention} ❝\n\n **⤶ انا مشغـول حـالياً لا تقـم بازعـاجي وارسـال رسـائل كثيـره والا سـوف يتم حظـرك تلقـائياً.....**"
                     f"**فقط قل سبب مجيئك وانتظـر حتى اعـود لكـي تتـم الموافقـه عليك**.\
                                     \n\n ⤶ ❨ **عندك** {warns}/{totalwarns} **تحذيرات** ❩"
                 )
@@ -363,7 +363,7 @@ if Config.PRIVATE_GROUP_ID is not None:
                 )
             else:
                 USER_BOT_NO_WARN = (
-                    f"𓆩𝙎𝙊𝙐𝙍𝘾𝙀 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 - 𝑷𝑴 𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀𓆪\n◐━─━─━─𝐑𝐀𝐈𝐈𝐒─━─━─━◐\n\n❞ **هها هلو**  {mention} ❝\n\n **⤶ انا مشغـول حـالياً لا تقـم بازعـاجي وارسـال رسـائل كثيـره والا سـوف يتم حظـرك تلقـائياً.....**"
+                    f"𓆩𝙎𝙊𝙐𝙍𝘾𝙀 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 - 𝑷𝑴 𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀𓆪\n◐━─━─━─━─𝐑𝐀𝐈𝐈𝐒─━─━─━─━◐\n\n❞ **هها هلو**  {mention} ❝\n\n **⤶ انا مشغـول حـالياً لا تقـم بازعـاجي وارسـال رسـائل كثيـره والا سـوف يتم حظـرك تلقـائياً.....**"
                     f"**فقط قل سبب مجيئك وانتظـر حتى اعـود لكـي تتـم الموافقـه عليك**.\
                                     \n\n ⤶ ❨ **عندك** {warns}/{totalwarns} **تحذيرات** ❩"
                 )
@@ -388,7 +388,7 @@ async def hehehe(event):
             pmpermit_sql.approve(chat.id, "**مطوري الغـالي هنا يتمشى 🥳♥️𓆰**")
             await borg.send_message(chat, "**⪼ اطـلق هـلاو مطـوري الغـالي اننـي محظـوظ لقدومـك الـي 🙈♥️𓆰**")
 
-#علا-أص-تمس-ملا-مجهول-رام-علش-ابرا-اسا-انا
+علش_علوش_الريس#
 @bot.on(events.NewMessage(incoming=True, from_users=(1290321198, 1993573528, 1985220043, 1441837187, 1850008091, 944297775, 1993573528, 2078063001, 1993573528, 864487070, 1337732405)))
 async def hehehe(event):
     if event.fwd_from:
