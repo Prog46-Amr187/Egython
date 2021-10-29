@@ -1,5 +1,5 @@
 #    Ralls - Userbot
-#    Owner - @N7QQQ
+#    Owner - @QQ070
 
 from telethon import events, Button
 from ..Config import Config
@@ -14,7 +14,7 @@ async def dev(kimo):
     )
    
 
-TOSH_PIC = Config.ALIVE_PIC if Config.ALIVE_PIC else "https://telegra.ph/file/637fe91a75c073278e4da.jpg"
+TOSH_PIC = Config.ALIVE_PIC if Config.ALIVE_PIC else "https://telegra.ph/file/be9f9a2283b1db8b2e3ae.jpg"
 
 if Config.TG_BOT_USERNAME is not None and tgbot is not None:
     @tgbot.on(events.InlineQuery)
@@ -27,7 +27,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
             buttons = [
                 [
                     Button.url("قنـاة السـورس ⚙️", "https://t.me/RallsThon"),
-                    Button.url("المطـور 👨🏻‍💻", "https://t.me/N7QQQ"),
+                    Button.url("المطـور 👨🏻‍💻", "https://t.me/QQ070"),
                 ]
             ]
             if TOSH_PIC and TOSH_PIC.endswith((".jpg", ".png", "gif", "mp4")):
