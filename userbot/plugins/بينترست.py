@@ -37,8 +37,8 @@ async def _(event):
     else:
         pass
     A = await event.respond("**╮•⎚ جـارِ التحميل ... 🧸🎈**")
-    N7QQQ = get_download_url(M)
-    await event.client.send_file(event.chat.id, N7QQQ)
+    QQ070 = get_download_url(M)
+    await event.client.send_file(event.chat.id, QQ070)
     await A.delete()
 
 
