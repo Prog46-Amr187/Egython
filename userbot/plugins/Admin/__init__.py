@@ -1,3 +1,3 @@
 # Ralls - USERBOT
-# OWNER - N7QQQ
+# OWNER - QQ070
 # All admins code from catuserbot 
