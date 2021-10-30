@@ -377,7 +377,7 @@ from telethon import events
 @bot.on(admin_cmd("المطور"))
 @bot.on(sudo_cmd("المطور", allow_sudo=True))
 async def _(zed):
-    await eor(zed, "𓆰 [𝙎𝙊𝙐𝙍𝘾𝞝 𝐑𝐀𝐈𝐈𝐒 - 𝑫𝑬𝑽𝑬𝑳𝑶𝑷𝑬𝑹](t.me/RallsThon) 🧸♥️𓆪\n**𓍹━─━─━─━─𝐑𝐀𝐈𝐈𝐒─━─━─━─━𓍻**\n **𓄂༒** 𝑫𝑬𝑽 𝑼𝑺𝑬𝑹  ↬ @QQ070 ༗\n **𓄂༒** 𝑫𝑬𝑽 𝑼𝑺𝑬𝑹  ↬ @ZZZZl1l ༗\n **𓄂༒** 𝑫𝑬𝑽 𝑼𝑺𝑬𝑹  ↬ @VVVVZ7 ༗")
+    await eor(zed, "𓆰 [𝙎𝙊𝙐𝙍𝘾𝞝 𝐑𝐀𝐈𝐈𝐒 - 𝑫𝑬𝑽𝑬𝑳𝑶𝑷𝑬𝑹](t.me/RallsThon) 🧸♥️𓆪\n**𓍹━─━─━─━─𝐑𝐀𝐈𝐈𝐒─━─━─━─━𓍻**\n **𓄂༒** 𝑫𝑬𝑽 𝑼𝑺𝑬𝑹  ↬ @QQ070 ༗\n **𓄂༒** 𝑫𝑬𝑽 𝑼𝑺𝑬𝑹  ↬ @VVVVX8 ༗\n **𓄂༒** 𝑫𝑬𝑽 𝑼𝑺𝑬𝑹  ↬ @U_F_N ༗")
 
 ########################  SOURCE Ralls ~ BY: aloosh (@QQ070)  ########################
 
