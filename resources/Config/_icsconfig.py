@@ -22,7 +22,7 @@ class Config(object):
     TOSH_START = os.environ.get("TOSH_START", None)
     TZ = os.environ.get("TZ", "Asia/Baghdad")
     UPSTREAM_REPO = os.environ.get(
-        "UPSTREAM_REPO", "https://github.com/RallsTeam/Ralls_pack.git"
+        "UPSTREAM_REPO", "https://github.com/Zedthon/ZED_USERBOT.git"
     )
 
     AUTONAME = os.environ.get("AUTONAME", None)
@@ -45,10 +45,10 @@ class Config(object):
     CUSTOM_ALIVE_EMOJI = os.environ.get("CUSTOM_ALIVE_EMOJI", None)
     CUSTOM_ALIVE_EMZED = os.environ.get("CUSTOM_ALIVE_EMZED", None)
     CUSTOM_PMPERMIT = os.environ.get("CUSTOM_PMPERMIT", None)
-    TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "Ralls - UserBot")
+    TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "Zed - UserBot")
     CLEAN_WELCOME = os.environ.get("CLEAN_WELCOME", True)
     THUMB_IMAGE = os.environ.get(
-        "THUMB_IMAGE", "https://telegra.ph/file/637fe91a75c073278e4da.jpg"
+        "THUMB_IMAGE", "https://telegra.ph/file/5adc05c0958432a117183.jpg"
     )
     UB_BLACK_LIST_CHAT = {
         int(x) for x in os.environ.get("UB_BLACK_LIST_CHAT", "").split()
