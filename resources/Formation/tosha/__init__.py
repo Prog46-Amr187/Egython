@@ -1,3 +1,3 @@
 from ._tosha import *
 from ._marosa import *
-from ._Ralls import *
+from ._zelzal import *
