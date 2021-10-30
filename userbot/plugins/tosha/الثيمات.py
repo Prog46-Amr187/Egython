@@ -1,7 +1,7 @@
 #حقوق ريس ثـون ومتعوب عليها .. تخمط اذكر المصدر حبي
 
 """
-©Ralls : @N7QQQ
+©Ralls : @QQ070
   - Tumblr Gif -1
   - Tumblr Gif -2
   - Tumblr Gif -3
