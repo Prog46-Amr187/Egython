@@ -14,5 +14,3 @@ async def icss(Ralls):
 @bot.on(sudo_cmd(pattern="ثيمات", allow_sudo=True))
 async def icss(Ralls):
     await eor(Ralls, ZL)
-
-
