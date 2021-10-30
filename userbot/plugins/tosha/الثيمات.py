@@ -162,3 +162,4 @@ async def stsTHMAT(ics):
         await ics.client.send_file(
             ics.chat_id, sts_attheme12, caption=tumc, reply_to=reply_to_id
         )
+
