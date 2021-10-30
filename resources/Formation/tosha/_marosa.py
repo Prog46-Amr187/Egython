@@ -3,15 +3,15 @@
 # theme loaded from here
 
 X = (
-    "𓆰 [𝗦𝗢𝗨𝗥𝗖𝗘 𝐑𝐀𝐈𝐈𝐒 - 𝙏𝙃𝙀𝙈𝙀 ثيمـات](t.me/Rallsthon) 𓆪\n\n"
+    "𓆰 [𝗦𝗢𝗨𝗥𝗖𝗘 𝐑𝐀𝐈𝐈𝐒 - 𝙏𝙃𝙀𝙈𝙀 ثيمـات](t.me/RallsThoN) 𓆪\n\n"
     "**⌔∮ قائـمه اوامر الثيمات :**\n\n"
     "⪼ `.ثيمات`\n\n\n"
-    "\n\n 𓆩 [𝗦𝗢𝗨𝗥𝗖𝗘 𝐑𝐀𝐈𝐈𝐒 - قنـاة السـورس](t.me/Rallsthon) 𓆪"
+    "\n\n 𓆩 [𝗦𝗢𝗨𝗥𝗖𝗘 𝐑𝐀𝐈𝐈𝐒 - قنـاة السـورس](t.me/RallsThoN) 𓆪"
 )
 
 
 ZL = (
-    "𓆰 [𝗦𝗢𝗨𝗥𝗖𝗘 𝐑𝐀𝐈𝐈𝐒 - 𝙏𝙃𝙀𝙈𝙀 ثيمـات](t.me/Rallsthon) 𓆪\n\n"
+    "𓆰 [𝗦𝗢𝗨𝗥𝗖𝗘 𝐑𝐀𝐈𝐈𝐒 - 𝙏𝙃𝙀𝙈𝙀 ثيمـات](t.me/RallsThoN) 𓆪\n\n"
     "**⌔∮ قائـمة ثيمـات ريسثــون :**\n"
     "⪼ `.ن1`\n"
     "⪼ `.ن2`\n"
@@ -25,7 +25,7 @@ ZL = (
     "⪼ `.ن10`\n"
     "⪼ `.ن11`\n"
     "⪼ `.ن12`\n"
-    "\n\n 𓆩 [𝗦𝗢𝗨𝗥𝗖𝗘 𝐑𝐀𝐈𝐈𝐒 - قنـاة السـورس](t.me/Rallsthon) 𓆪"
+    "\n\n 𓆩 [𝗦𝗢𝗨𝗥𝗖𝗘 𝐑𝐀𝐈𝐈𝐒 - قنـاة السـورس](t.me/RallsThoN) 𓆪"
 )
 
 FANAN = "𓆩 𝗦𝗢𝗨𝗥𝗖𝗘 𝐑𝐀𝐈𝐈𝐒 - 𝙏𝙃𝙀𝙈𝙀 ثيمـات 𓆪"
@@ -82,4 +82,3 @@ sts_attheme23 = "https://t.me/SSSSllv/61"
 sts_attheme24 = "https://t.me/SSSSllv/63"
 sts_attheme25 = "https://t.me/SSSSllv/65"
 sts_attheme26 = "https://t.me/SSSSllv/67"
-
