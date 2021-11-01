@@ -299,7 +299,7 @@ async def _(event):
         deq.rotate(1)
 
 
-@icssbot.on(admin_cmd(pattern="اشوفج السطح$"))
+@icssbot.on(admin_cmd(pattern="جوه الدرج$"))
 async def _(event):
     animation_interval = 3
     animation_ttl = range(0, 103)
