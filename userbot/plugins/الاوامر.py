@@ -377,7 +377,7 @@ from telethon import events
 @bot.on(admin_cmd("المطور"))
 @bot.on(sudo_cmd("المطور", allow_sudo=True))
 async def _(Ralls):
-    await eor(Ralls, "𓆰 [𝙎𝙊𝙐𝙍𝘾𝞝 𝐑𝐀𝐈𝐈𝐒 - 𝑫𝑬𝑽𝑬𝑳𝑶𝑷𝑬𝑹](t.me/RallsThon) 🧸♥️𓆪\n**𓍹━─━─━─━─𝐑𝐀𝐈𝐈𝐒─━─━─━─━𓍻**\n **𓄂༒** 𝑫𝑬𝑽 𝑼𝑺𝑬𝑹  ↬ @QQ070 ༗\n **𓄂༒** 𝑫𝑬𝑽 𝑼𝑺𝑬𝑹  ↬ @U_F_N ༗")
+    await eor(Ralls, "𓆰 [𝙎𝙊𝙐𝙍𝘾𝞝 𝐑𝐀𝐈𝐈𝐒 - 𝑫𝑬𝑽𝑬𝑳𝑶𝑷𝑬𝑹](t.me/RallsThon) 🧸♥️𓆪\n**𓍹━─━─━─━─𝐑𝐀𝐈𝐈𝐒─━─━─━─━𓍻**\n **𓄂༒** 𝑫𝑬𝑽 𝑼𝑺𝑬𝑹  ↬ @QQ070 ༗\n **𓄂༒** 𝑫𝑬𝑽 𝑼𝑺𝑬𝑹  ↬ @IllIl1I ༗")
 
 ########################  SOURCE Ralls ~ BY: aloosh (@QQ070)  ########################
 
@@ -837,7 +837,7 @@ async def dev(alive):
         cat_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
         cat_caption += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
         cat_caption += f"**{EMOJI}** 𝑫𝑬𝑽 𝑼𝑺𝑬𝑹 1 ↬ @QQ070 ༗\n"
-        cat_caption += f"**{EMOJI}** 𝑫𝑬𝑽 𝑼𝑺𝑬𝑹 2 ↬ @U_F_N ༗\n"
+        cat_caption += f"**{EMOJI}** 𝑫𝑬𝑽 𝑼𝑺𝑬𝑹 2 ↬ @IllIl1I ༗\n"
         cat_caption += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻"
         await alive.client.send_file(
             alive.chat_id, CAT_IMG, caption=cat_caption, reply_to=reply_to_id
@@ -849,6 +849,6 @@ async def dev(alive):
             f"**{CUSTOM_ALIVE_TEXT}**\n"
             f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
             f"**{EMOJI}** 𝑫𝑬𝑽 𝑼𝑺𝑬𝑹 1 ↬ @QQ070 ༗\n"
-            f"**{EMOJI}** 𝑫𝑬𝑽 𝑼𝑺𝑬𝑹 2 ↬ @U_F_N ༗\n"
+            f"**{EMOJI}** 𝑫𝑬𝑽 𝑼𝑺𝑬𝑹 2 ↬ @IllIl1I ༗\n"
             f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧ𝐑𝐀𝐈𝐈𝐒ⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻",
         )
