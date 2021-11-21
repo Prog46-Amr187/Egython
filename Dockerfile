@@ -1,7 +1,7 @@
-FROM telethon-Arab/telethonNow:latest
+FROM RallsTeam/Ralls_thon:latest
 
 
-RUN git clone https://github.com/telethon-Arab/telethonNow.git /root/userbot
+RUN git clone https://github.com/RallsTeam/Ralls_thon.git /root/userbot
 
 WORKDIR /root/userbot
 
