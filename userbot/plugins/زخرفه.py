@@ -19,7 +19,7 @@ async def _(event):
     reply_to_id = await reply_id(event)
     if event.reply_to_msg_id:
         reply_to_id = await event.get_reply_message()
-    chat = "@RallsThonbbot"
+    chat = "@Ralls1_bot"
     catevent = await edit_or_reply(event, "**جـارِ الزغـرفـه💞🧸...**")
     async with event.client.conversation(chat) as conv:
         try:
@@ -50,7 +50,7 @@ async def _(event):
     if not reply_message.text:
         await edit_or_reply(event, "**باضافـة الكلمـة المراد زغرفتها للأمـر .. مثال : .زخرفه + كلمـه 💞🧸.**")
         return
-    chat = "@RallsThonbbot"
+    chat = "@Ralls1_bot"
     catevent = await edit_or_reply(event, "**باضافـة الكلمـة المراد زغرفتها للأمـر .. مثال : .زخرفه + كلمـه 💞🧸.**")
     async with event.client.conversation(chat) as conv:
         try:
