@@ -24,8 +24,8 @@ from youtube_dl.utils import (
 from . import hmention, progress, ytsearch
 
 
-@icssbot.on(admin_cmd(pattern="تحميل (ص|ف)(?: |$)(.*)", outgoing=True))
-@icssbot.on(sudo_cmd(pattern="تحميل (ص|ف)(?: |$)(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="تحميل (ص|ف)(?: |$)(.*)", outgoing=True))
+@bot.on(sudo_cmd(pattern="تحميل (ص|ف)(?: |$)(.*)", allow_sudo=True))
 async def download_video(v_url):
     url = v_url.pattern_match.group(2)
     if not url:
@@ -36,7 +36,7 @@ async def download_video(v_url):
         await edit_or_reply(v_url, "**عـليك ادراج رابـط مع الامر اولا ليتـم التحميـل**")
         return
     ytype = v_url.pattern_match.group(1).lower()
-    v_url = await edit_or_reply(v_url, "**⌔∮ جـارِ التحميل انتظر قليلا ▬▭ ...**")
+    v_url = await edit_or_reply(v_url, "**⌔╎جـارِ التحميل انتظر قليلا ▬▭ ...**")
     reply_to_id = await reply_id(v_url)
     if ytype == "ص":
         opts = {
@@ -79,7 +79,7 @@ async def download_video(v_url):
         song = False
         video = True
     try:
-        await v_url.edit("**- يتم جلب البيانات انتظر قليلا**")
+        await v_url.edit("**╮ ❐ يتـم جلـب البيانـات انتظـر قليلاً ...𓅫╰▬▭ **")
         with YoutubeDL(opts) as ytdl:
             ytdl_data = ytdl.extract_info(url)
     except DownloadError as DE:
@@ -100,7 +100,7 @@ async def download_video(v_url):
         await v_url.edit("**كان هناك خطأ أثناء المعالجة**")
         return
     except UnavailableVideoError:
-        await v_url.edit("`الوسائط غير متوفرة بالتنسيق المطلوب`")
+        await v_url.edit("**⌔∮عـذراً .. الوسائط غير متوفـره بالتنسيق المطلـوب**")
         return
     except XAttrMetadataError as XAME:
         await v_url.edit(f"`{XAME.code}: {XAME.msg}\n{XAME.reason}`")
@@ -119,7 +119,7 @@ async def download_video(v_url):
         icstb = None
     if song:
         await v_url.edit(
-            f"**التحضيـر للـرفع انتظر**:\
+            f"**╮ ❐ جـارِ التحضيـر للـرفع انتظـر ...𓅫╰**:\
             \n**{ytdl_data['title']}**\
             \nبـواسطة *{ytdl_data['uploader']}*"
         )
@@ -137,7 +137,7 @@ async def download_video(v_url):
                 )
             ],
             progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                progress(d, t, v_url, itime, "** ⌔∮ جاري التحميل ▬▭ ...**", f"{ytdl_data['title']}.mp3")
+                progress(d, t, v_url, itime, "** ⌔╎جاري التحميل ▬▭ ...**", f"{ytdl_data['title']}.mp3")
             ),
         )
         os.remove(f"{ytdl_data['id']}.mp3")
@@ -154,7 +154,7 @@ async def download_video(v_url):
             supports_streaming=True,
             caption=ytdl_data["title"],
             progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                progress(d, t, v_url, itime, "** ⌔∮ جاري التحميل ▬▭ ...**", f"{ytdl_data['title']}.mp4")
+                progress(d, t, v_url, itime, "** ⌔╎جاري التحميل ▬▭ ...**", f"{ytdl_data['title']}.mp4")
             ),
         )
         os.remove(f"{ytdl_data['id']}.mp4")
@@ -163,8 +163,8 @@ async def download_video(v_url):
     await v_url.delete()
 
 
-@icssbot.on(admin_cmd(pattern="يوتيوب(?: |$)(\d*)? ?(.*)", command="يوتيوب"))
-@icssbot.on(sudo_cmd(pattern="يوتيوب(?: |$)(\d*)? ?(.*)", command="يوتيوب", allow_sudo=True))
+@bot.on(admin_cmd(pattern="يوتيوب(?: |$)(\d*)? ?(.*)", command="يوتيوب"))
+@bot.on(sudo_cmd(pattern="يوتيوب(?: |$)(\d*)? ?(.*)", command="يوتيوب", allow_sudo=True))
 async def yt_search(event):
     if event.fwd_from:
         return
@@ -175,9 +175,9 @@ async def yt_search(event):
         query = str(event.pattern_match.group(2))
     if not query:
         return await edit_delete(
-            event, "**بالرد على كلمه للبحث عنها او بوضع الكلمه مع الامر**"
+            event, "**╮ بالـرد ﮼؏ كلمـٓھہ للبحث أو ضعها مـع الأمـر ... 𓅫╰**"
         )
-    video_q = await edit_or_reply(event, "**جـارِ البحث...**")
+    video_q = await edit_or_reply(event, "**╮ جـارِ البحث ▬▭... ╰**")
     if event.pattern_match.group(1) != "":
         lim = int(event.pattern_match.group(1))
         if lim <= 0:
@@ -192,8 +192,8 @@ async def yt_search(event):
     await edit_or_reply(video_q, reply_text)
 
 
-@icssbot.on(admin_cmd(pattern="انستا (.*)"))
-@icssbot.on(sudo_cmd(pattern="انستا (.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="انستا (.*)"))
+@bot.on(sudo_cmd(pattern="انستا (.*)", allow_sudo=True))
 async def kakashi(event):
     if event.fwd_from:
         return
@@ -201,11 +201,11 @@ async def kakashi(event):
     link = event.pattern_match.group(1)
     if "www.instagram.com" not in link:
         await edit_or_reply(
-            event, "` احتاج لرابط الانستا للتنزيل هذا المقطع...`(*_*)"
+            event, "**╮ احتاج لرابـط الانستا لـ تنزيل المقطـع ...(*_*)╰**"
         )
     else:
         start = datetime.now()
-        icse = await edit_or_reply(event, "**جاري التحميل.....**")
+        icse = await edit_or_reply(event, "**╮ ❐ جـارِ التحميـل انتظـر قليلاً  ▬▭... 𓅫╰**")
     async with event.client.conversation(chat) as conv:
         try:
             msg_start = await conv.send_message("/start")
