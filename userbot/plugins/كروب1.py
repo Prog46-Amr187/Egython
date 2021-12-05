@@ -1,4 +1,4 @@
-# for -<*>~ SOURCE Ralls ~<*>- edit By: @RallsTHON
+# for -<*>~ SOURCE Ralls ~<*>- edit By: @THON
 
 import asyncio
 import io
@@ -37,18 +37,18 @@ from telethon.utils import get_input_location
 from . import BOTLOG, BOTLOG_CHATID
 
 
-@icssbot.on(admin_cmd(outgoing=True, pattern="مغادره$"))
+@bot.on(admin_cmd(outgoing=True, pattern="مغادره$"))
 async def kickme(leave):
     await leave.edit("⪼ٖ تمت مغادرۿہٰ المجمـوعۿہٰ بنجـاح ༗ .")
     await leave.client.kick_participant(leave.chat_id, "me")
 
 
-@icssbot.on(admin_cmd(pattern="المشرفين ?(.*)"))
-@icssbot.on(sudo_cmd(pattern="المشرفين ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="المشرفين ?(.*)"))
+@bot.on(sudo_cmd(pattern="المشرفين ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
-    mentions = "𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 𝑮𝑹𝑶𝑼𝑷 𝑫𝑨𝑻𝑨 𓆪\n** ⪼ المشرفـون في ۿذه المجموعه :** \n"
+    mentions = "𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 Rallsthon 𝑮𝑹𝑶𝑼𝑷 𝑫𝑨𝑻𝑨 𓆪\n** ⪼ المشرفـون في ۿذه المجموعه :** \n"
     reply_message = None
     if event.reply_to_msg_id:
         reply_message = await event.get_reply_message()
@@ -57,7 +57,7 @@ async def _(event):
     chat = None
     if input_str:
         mentions_heading = (
-            "𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 𝑮𝑹𝑶𝑼𝑷 𝑫𝑨𝑻𝑨 𓆪\n**⪼ مشرفـون في {} المجموعه :** \n".format(
+            "𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 Rallsthon 𝑮𝑹𝑶𝑼𝑷 𝑫𝑨𝑻𝑨 𓆪\n**⪼ مشرفـون في {} المجموعه :** \n".format(
                 input_str
             )
         )
@@ -100,12 +100,12 @@ async def _(event):
     await event.delete()
 
 
-@icssbot.on(admin_cmd(pattern="البوتات ?(.*)", outgoing=True))
-@icssbot.on(sudo_cmd(pattern="البوتات ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="البوتات ?(.*)", outgoing=True))
+@bot.on(sudo_cmd(pattern="البوتات ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
-    mentions = "𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 𝑮𝑹𝑶𝑼𝑷 𝑫𝑨𝑻𝑨 𓆪\n** ⪼ البوتـات في ۿذه المجموعه :** \n"
+    mentions = "𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 Rallsthon 𝑮𝑹𝑶𝑼𝑷 𝑫𝑨𝑻𝑨 𓆪\n** ⪼ البوتـات في ۿذه المجموعه :** \n"
     input_str = event.pattern_match.group(1)
     to_write_chat = await event.get_input_chat()
     chat = None
@@ -113,7 +113,7 @@ async def _(event):
         chat = to_write_chat
     else:
         mentions = (
-            "𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 𝑮𝑹𝑶𝑼𝑷 𝑫𝑨𝑻𝑨 𓆪\n**⪼ البوتـات في {} المجموعه :**\n".format(
+            "𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 Rallsthon 𝑮𝑹𝑶𝑼𝑷 𝑫𝑨𝑻𝑨 𓆪\n**⪼ البوتـات في {} المجموعه :**\n".format(
                 input_str
             )
         )
@@ -138,13 +138,112 @@ async def _(event):
         mentions += " " + str(e) + "\n"
     await edit_or_reply(event, mentions)
 
+@bot.on(admin_cmd(pattern="معرفات 100(?: |$)(.*)"))
+@bot.on(sudo_cmd(pattern="معرفات 100(?: |$)(.*)", allow_sudo=True))
+async def Ralls(Rallsthon):
+    mentions = Rallsthon.text[8:]
+    chat = await Rallsthon.get_input_chat()
+    async for x in Rallsthon.client.iter_participants(chat, 100):
+        mentions += f"\n**-** @{x.username} "
+    await Rallsthon.client.send_message(Rallsthon.chat_id, mentions)
+    await Rallsthon.delete()
+@bot.on(admin_cmd(pattern="معرفات 200(?: |$)(.*)"))
+@bot.on(sudo_cmd(pattern="معرفات 200(?: |$)(.*)", allow_sudo=True))
+async def Ralls(Rallsthon):
+    mentions = Rallsthon.text[8:]
+    chat = await Rallsthon.get_input_chat()
+    async for x in Rallsthon.client.iter_participants(chat, 200):
+        mentions += f"\n**-** @{x.username} "
+    await Rallsthon.client.send_message(Rallsthon.chat_id, mentions)
+    await Rallsthon.delete()
+@bot.on(admin_cmd(pattern="معرفات 300(?: |$)(.*)"))
+@bot.on(sudo_cmd(pattern="معرفات 300(?: |$)(.*)", allow_sudo=True))
+async def Ralls(Rallsthon):
+    mentions = Rallsthon.text[8:]
+    chat = await Rallsthon.get_input_chat()
+    async for x in Rallsthon.client.iter_participants(chat, 300):
+        mentions += f"\n**-** @{x.username} "
+    await Rallsthon.client.send_message(Rallsthon.chat_id, mentions)
+    await Rallsthon.delete()
+@bot.on(admin_cmd(pattern="تاك 500(?: |$)(.*)"))
+@bot.on(sudo_cmd(pattern="تاك 500(?: |$)(.*)", allow_sudo=True))
+async def Ralls(Rallsthon):
+    mentions = Rallsthon.text[8:]
+    chat = await Rallsthon.get_input_chat()
+    async for x in Rallsthon.client.iter_participants(chat, 500):
+        mentions += f"- @{x.username} "
+    await Rallsthon.client.send_message(Rallsthon.chat_id, mentions)
+    await Rallsthon.delete()
+@bot.on(admin_cmd(pattern="تاك 1k(?: |$)(.*)"))
+@bot.on(sudo_cmd(pattern="تاك 1k(?: |$)(.*)", allow_sudo=True))
+async def Ralls(Rallsthon):
+    mentions = Rallsthon.text[8:]
+    chat = await Rallsthon.get_input_chat()
+    async for x in Rallsthon.client.iter_participants(chat, 1000):
+        mentions += f"- @{x.username} "
+    await Rallsthon.client.send_message(Rallsthon.chat_id, mentions)
+    await Rallsthon.delete()
+@bot.on(admin_cmd(pattern="تاك 300(?: |$)(.*)"))
+@bot.on(sudo_cmd(pattern="تاك 300(?: |$)(.*)", allow_sudo=True))
+async def Ralls(Rallsthon):
+    mentions = Rallsthon.text[8:]
+    chat = await Rallsthon.get_input_chat()
+    async for x in Rallsthon.client.iter_participants(chat, 300):
+        mentions += f"\n**𒀭╎**  [{x.first_name}](tg://user?id={x.id}) "
+    await Rallsthon.client.send_message(Rallsthon.chat_id, mentions)
+    await Rallsthon.delete()
+@bot.on(admin_cmd(pattern="تاك 200(?: |$)(.*)"))
+@bot.on(sudo_cmd(pattern="تاك 200(?: |$)(.*)", allow_sudo=True))
+async def Ralls(Rallsthon):
+    mentions = Rallsthon.text[8:]
+    chat = await Rallsthon.get_input_chat()
+    async for x in Rallsthon.client.iter_participants(chat, 200):
+        mentions += f"\n**𒀭╎**  [{x.first_name}](tg://user?id={x.id}) "
+    await Rallsthon.client.send_message(Rallsthon.chat_id, mentions)
+    await Rallsthon.delete()
+@bot.on(admin_cmd(pattern="تاك 150(?: |$)(.*)"))
+@bot.on(sudo_cmd(pattern="تاك 150(?: |$)(.*)", allow_sudo=True))
+async def Ralls(Rallsthon):
+    mentions = Rallsthon.text[8:]
+    chat = await Rallsthon.get_input_chat()
+    async for x in Rallsthon.client.iter_participants(chat, 150):
+        mentions += f"\n**𒀭╎**  [{x.first_name}](tg://user?id={x.id}) "
+    await Rallsthon.client.send_message(Rallsthon.chat_id, mentions)
+    await Rallsthon.delete()
+@bot.on(admin_cmd(pattern="تاك 100(?: |$)(.*)"))
+@bot.on(sudo_cmd(pattern="تاك 100(?: |$)(.*)", allow_sudo=True))
+async def Ralls(Rallsthon):
+    mentions = Rallsthon.text[8:]
+    chat = await Rallsthon.get_input_chat()
+    async for x in Rallsthon.client.iter_participants(chat, 100):
+        mentions += f"\n**𒀭╎**  [{x.first_name}](tg://user?id={x.id}) "
+    await Rallsthon.client.send_message(Rallsthon.chat_id, mentions)
+    await Rallsthon.delete()
+@bot.on(admin_cmd(pattern="تاك 50(?: |$)(.*)"))
+@bot.on(sudo_cmd(pattern="تاك 50(?: |$)(.*)", allow_sudo=True))
+async def Ralls(Rallsthon):
+    mentions = Rallsthon.text[8:]
+    chat = await Rallsthon.get_input_chat()
+    async for x in Rallsthon.client.iter_participants(chat, 50):
+        mentions += f"\n**𒀭╎**  [{x.first_name}](tg://user?id={x.id}) "
+    await Rallsthon.client.send_message(Rallsthon.chat_id, mentions)
+    await Rallsthon.delete()
+@bot.on(admin_cmd(pattern="تاك 10(?: |$)(.*)"))
+@bot.on(sudo_cmd(pattern="تاك 10(?: |$)(.*)", allow_sudo=True))
+async def Ralls(Rallsthon):
+    mentions = Rallsthon.text[8:]
+    chat = await Rallsthon.get_input_chat()
+    async for x in Rallsthon.client.iter_participants(chat, 10):
+        mentions += f"\n**𒀭╎**  [{x.first_name}](tg://user?id={x.id}) \n"
+    await Rallsthon.client.send_message(Rallsthon.chat_id, mentions)
+    await Rallsthon.delete()
 
-@icssbot.on(admin_cmd(pattern=r"الاعضاء ?(.*)", outgoing=True))
-@icssbot.on(sudo_cmd(pattern=r"الاعضاء ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern=r"تك ?(.*)", outgoing=True))
+@bot.on(sudo_cmd(pattern=r"تك ?(.*)", allow_sudo=True))
 async def get_users(show):
     if show.fwd_from:
         return
-    mentions = "𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 𝑮𝑹𝑶𝑼𝑷 𝑫𝑨𝑻𝑨 𓆪\n**⪼ المستخدمـون في ۿذه المجموعه**  𓎤: \n"
+    mentions = "𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 Rallsthon 𝑮𝑹𝑶𝑼𝑷 𝙏𝘼𝙂 𓆪\n**⪼ هييه تعالـو يحبابين**  𓎤: \n"
     reply_to_id = None
     if show.reply_to_msg_id:
         reply_to_id = show.reply_to_msg_id
@@ -156,70 +255,7 @@ async def get_users(show):
             return
     else:
         mentions_heading = (
-            "𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 𝑮𝑹𝑶𝑼𝑷 𝑫𝑨𝑻𝑨 𓆪\n⪼ الاعضاء  في {} المجموعه : \n".format(
-                input_str
-            )
-        )
-        mentions = mentions_heading
-        try:
-            chat = await show.client.get_entity(input_str)
-        except Exception as e:
-            await edit_delete(show, f"`{str(e)}`", 10)
-    catevent = await edit_or_reply(
-        show, "**⪼ الحصول على قائمه المستخدميـن انتظر ..**  "
-    )
-    try:
-        if not show.pattern_match.group(1):
-            async for user in show.client.iter_participants(show.chat_id):
-                if not user.deleted:
-                    mentions += (
-                        f"\n ⪼ [{user.first_name}](tg://user?id={user.id}) `{user.id}`"
-                    )
-                else:
-                    mentions += f"\n ⪼ حساب محذوف `{user.id}`"
-        else:
-            async for user in show.client.iter_participants(chat.id):
-                if not user.deleted:
-                    mentions += (
-                        f"\n ⪼ [{user.first_name}](tg://user?id={user.id}) `{user.id}`"
-                    )
-                else:
-                    mentions += f"\n ⪼ حساب محذوف `{user.id}`"
-    except Exception as e:
-        mentions += " " + str(e) + "\n"
-    if len(mentions) > Config.MAX_MESSAGE_SIZE_LIMIT:
-        with io.BytesIO(str.encode(mentions)) as out_file:
-            out_file.name = "users.text"
-            await show.client.send_file(
-                show.chat_id,
-                out_file,
-                force_document=True,
-                allow_cache=False,
-                caption="Users list",
-                reply_to=reply_to_id,
-            )
-            await catevent.delete()
-    else:
-        await catevent.edit(mentions)
-
-@icssbot.on(admin_cmd(pattern=r"تاك ?(.*)", outgoing=True))
-@icssbot.on(sudo_cmd(pattern=r"تاك ?(.*)", allow_sudo=True))
-async def get_users(show):
-    if show.fwd_from:
-        return
-    mentions = "𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 𝑮𝑹𝑶𝑼𝑷 𝙏𝘼𝙂 𓆪\n**⪼ هييه تعالـو يحبابين**  𓎤: \n"
-    reply_to_id = None
-    if show.reply_to_msg_id:
-        reply_to_id = show.reply_to_msg_id
-    input_str = show.pattern_match.group(1)
-    await show.get_input_chat()
-    if not input_str:
-        if not show.is_group:
-            await edit_or_reply(show, "**هل أنت متأكد من أن هذه مجموعة?**")
-            return
-    else:
-        mentions_heading = (
-            "𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 𝑮𝑹𝑶𝑼𝑷 𝑫𝑨𝑻𝑨 𓆪\n⪼ الاعضاء  في {} المجموعه : \n".format(
+            "𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 Rallsthon 𝑮𝑹𝑶𝑼𝑷 𝑫𝑨𝑻𝑨 𓆪\n⪼ الاعضاء  في {} المجموعه : \n".format(
                 input_str
             )
         )
@@ -265,8 +301,8 @@ async def get_users(show):
     else:
         await catevent.edit(mentions)
 
-@icssbot.on(admin_cmd(pattern="المجموعه(?: |$)(.*)", outgoing=True))
-@icssbot.on(sudo_cmd(pattern="المجموعه(?: |$)(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="المجموعه(?: |$)(.*)", outgoing=True))
+@bot.on(sudo_cmd(pattern="المجموعه(?: |$)(.*)", allow_sudo=True))
 async def info(event):
     catevent = await edit_or_reply(event, "**⪼ تحليل الدردشـه جـاري...**")
     chat = await get_chatinfo(event, catevent)
@@ -281,8 +317,8 @@ async def info(event):
         await catevent.edit("**لقد حدث خطأ غير متوقع**")
 
 
-@icssbot.on(admin_cmd(pattern="مسح المحظورين ?(.*)"))
-@icssbot.on(sudo_cmd(pattern="مسح المحظورين ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="مسح المحظورين ?(.*)"))
+@bot.on(sudo_cmd(pattern="مسح المحظورين ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -312,8 +348,8 @@ async def _(event):
         await et.edit("⪼ {} **↩︎ {} غير محظور**".format(event.chat_id, p))
 
 
-@icssbot.on(admin_cmd(pattern="اكسباير ?(.*)", outgoing=True))
-@icssbot.on(sudo_cmd(pattern="اكسباير ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="اكسباير ?(.*)", outgoing=True))
+@bot.on(sudo_cmd(pattern="اكسباير ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -426,7 +462,7 @@ async def _(event):
         elif i.status is None:
             n += 1
     if input_str:
-        required_string = """𓆰 𝑺𝑼𝑹𝑪𝑬 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉  - 𝑮𝑹𝑼𝑶𝑷 𝑺𝑻𝑨𝑻𝑺 𓆪\n 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻 
+        required_string = """𓆰 𝑺𝑼𝑹𝑪𝑬 Rallsthon  - 𝑮𝑹𝑼𝑶𝑷 𝑺𝑻𝑨𝑻𝑺 𓆪\n 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻 
 ⪼ المطرودين {} / {} المستخدمين
 ⪼ **الحسابات المحذوفه ↫** {}
 ⪼ **اخر ظهور منذ زمن طويل ↫** {}
@@ -440,7 +476,7 @@ async def _(event):
         await et.edit(required_string.format(c, p, d, y, m, w, o, q, r, b, n))
         await asyncio.sleep(5)
     await et.edit(
-        """𓆰 𝑺𝑼𝑹𝑪𝑬 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉  - 𝑮𝑹𝑼𝑶𝑷 𝑺𝑻𝑨𝑻𝑺 𓆪\n 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻
+        """𓆰 𝑺𝑼𝑹𝑪𝑬 Rallsthon  - 𝑮𝑹𝑼𝑶𝑷 𝑺𝑻𝑨𝑻𝑺 𓆪\n 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻
 ⪼ **العدد ↫ {} **مستخدماً
 ⪼ **الحسابات المحذوفه ↫** {}
 ⪼ **اخر ظهور منذ زمن طويل ↫** {}
@@ -456,8 +492,8 @@ async def _(event):
     )
 
 
-@icssbot.on(admin_cmd(pattern=f"تنظيف الحسابات ?(.*)"))
-@icssbot.on(sudo_cmd(pattern="تنظيف الحسابات ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern=f"تنظيف الحسابات ?(.*)"))
+@bot.on(sudo_cmd(pattern="تنظيف الحسابات ?(.*)", allow_sudo=True))
 async def rm_deletedacc(show):
     con = show.pattern_match.group(1).lower()
     del_u = 0
@@ -699,7 +735,7 @@ async def fetch_info(chat, event):
         for bot in bots_list:
             bots += 1
 
-    caption = "<b> 𓆰 𝑺𝑶𝑼𝑹𝑪𝑬 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉  - 𝑮𝑹𝑼𝑶𝑷 𝑫𝑨𝑻𝑨 𓆪\n𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻 </b>\n"
+    caption = "<b> 𓆰 𝑺𝑶𝑼𝑹𝑪𝑬 Rallsthon  - 𝑮𝑹𝑼𝑶𝑷 𝑫𝑨𝑻𝑨 𓆪\n𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻 </b>\n"
     caption += f"⪼ ايـدي المجمـوعه : <code>{chat_obj_info.id}</code>\n"
     if chat_title is not None:
         caption += f"⪼ اسـم {chat_type} : {chat_title}\n"
@@ -757,7 +793,7 @@ async def fetch_info(chat, event):
         else:
             caption += "\n"
     if not broadcast:
-        caption += f"⪼ المجموعة خارقه: {supergroup}\n 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n𓆩 𝙎𝙊𝙐𝙍𝘾 𝐑𝐀𝐈𝐈𝐒 𝘿𝙀𝙑 - @N7QQQ 𓆪"
+        caption += f"⪼ المجموعة خارقه: {supergroup}\n 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n𓆩 sourc DEV - @QQ070 𓆪"
         #     if hasattr(chat_obj_info, "restricted"):
         #         caption += f"محدد: {restricted}\n"
         if chat_obj_info.restricted:
@@ -772,28 +808,32 @@ async def fetch_info(chat, event):
         #         caption += f"تم التحقق بواسطة تلكرام: {verified}\n"
         #     if description:
         caption += f"الوصف: \n<code>{description}</code>\n"
-        caption = f"<b>𓆩 𝙎𝙊𝙐𝙍𝘾 𝐑𝐀𝐈𝐈𝐒 𝘿𝙀𝙑 - @N7QQQ 𓆪</b>"
+        caption = f"<b>𓆩 sourc DEV - @QQ070 𓆪</b>"
     return caption
 
 
 CMD_HELP.update(
     {
-        "كروب1": "**Plugin : **`كروب1`\
-    \n\n**Syntax : **`.مغادره`\
-    \n**Usage : **__لمغادرة المجموعة المحددةة_\
-    \n\n**Syntax : **`.المشرفين او .المشرفين + معرف المجموعة `\
-    \n**Usage : **__لعرض قائمة بمشرفين المجموعة المحددة.__\
-    \n\n**Syntax : **`.البوتات او .البوتات + معرف المجموعة `\
-    \n**Usage : **__لعرض قائمة ببوتات المجموعة المحددة.__\
-    \n\n**Syntax : **`.الاعضاء او .الاعضاء + معرف المجموعة`\
-    \n**Function : **__لعرض قائمة بكل اعضاء المجموعة.__\
-    \n\n**Syntax : **`.مسح المحظورين`\
-    \n**Function: **__مسح كل المحظورين في المجموعة المحددة. __\
-    \n\n**Syntax : **`.اكسباير`\
-    \n**Function: **__لعرض لستة معلومات خاصة بالمجموعة المحددة.__\
-    \n\n**Syntax : **`.المجموعه او .المجموعه + معرف المجموعة`\
-    \n**Function : **__لرؤية كل المعلومات المتعلقة بالمجموعة او القناة المحددة.__\
-    \n\n**Syntax : **`.تنظيف الحسابات`\
-    \n**Function : **__لتنظيف الحسابات المحذوفه من المجموعة المحددة.__"
+        "كروب1": "**اسم الاضافـه : **`كروب1`\
+    \n\n**╮•❐ الامـر ⦂ **`.مغادره`\
+    \n**الشـرح •• **__لمغادرة المجموعة المحددةة_\
+    \n\n**╮•❐ الامـر ⦂ **`.المشرفين او .المشرفين + معرف المجموعة `\
+    \n**الشـرح •• **__لعرض قائمة بمشرفين المجموعة المحددة.__\
+    \n\n**╮•❐ الامـر ⦂ **`.البوتات او .البوتات + معرف المجموعة `\
+    \n**الشـرح •• **__لعرض قائمة ببوتات المجموعة المحددة.__\
+    \n\n**╮•❐ الامـر ⦂ **`.الاعضاء او .الاعضاء + معرف المجموعة`\
+    \n**الشـرح •• **__لعرض قائمة بكل اعضاء المجموعة.__\
+    \n\n**╮•❐ الامـر ⦂ **`.تاك + عدد  الاعداد هي (10 - 50 - 100 - 150 - 200 - 300 - 500 - 1k)`\
+    \n**الشـرح •• **__يقـوم بعمـل تـاك اسمـاء لعـدد محـدد من اعضاء المجموعة على حسب آخر المتفاعليـن.__\
+    \n\n**╮•❐ الامـر ⦂ **`.معرفات + عدد  الاعداد هي (100 - 200 - 300)`\
+    \n**الشـرح •• **__يقـوم بعمـل تـاك معرفـات لعـدد محـدد من اعضاء المجموعة على حسب آخر المتفاعليـن.__\
+    \n\n**╮•❐ الامـر ⦂ **`.مسح المحظورين`\
+    \n**الشـرح •• **__مسح كل المحظورين في المجموعة المحددة. __\
+    \n\n**╮•❐ الامـر ⦂ **`.اكسباير`\
+    \n**الشـرح •• **__لعرض لستة معلومات خاصة بالمجموعة المحددة.__\
+    \n\n**╮•❐ الامـر ⦂ **`.المجموعه او .المجموعه + معرف المجموعة`\
+    \n**الشـرح •• **__لرؤية كل المعلومات المتعلقة بالمجموعة او القناة المحددة.__\
+    \n\n**╮•❐ الامـر ⦂ **`.تنظيف الحسابات`\
+    \n**الشـرح •• **__لتنظيف الحسابات المحذوفه من المجموعة المحددة.__"
     }
 )
