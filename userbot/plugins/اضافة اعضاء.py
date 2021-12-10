@@ -67,7 +67,7 @@ def user_full_name(user):
 
 
 
-@bot.on(admin_cmd(pattern=r"اضف ?(.*)"))
+@bot.on(admin_cmd(pattern=r"اضافة ?(.*)"))
 async def get_users(event):
     sender = await event.get_sender()
     me = await event.client.get_me()
@@ -75,7 +75,7 @@ async def get_users(event):
         eva = await event.reply("**╮  جـاري الاضـافه .. الࢪجـاء الانتظـار ...𓅫╰**")
     else:
         eva = await event.edit("**╮  جـاري الاضـافه .. الࢪجـاء الانتظـار ...𓅫╰**.")
-    RallsTHON = await get_chatinfo(event)
+    ZEDTHON = await get_chatinfo(event)
     chat = await event.get_chat()
     if event.is_private:
         return await eva.edit("**╮  لا استطـيع اضافـة الاعضـاء هـنا 𓅫╰**")
@@ -86,7 +86,7 @@ async def get_users(event):
     await eva.edit(
         "**╮  حـالة الإضافـه :**\n\n**╮  جـاري جـمع معـلومات الاعضـاء ...⏳**"
     )
-    async for user in event.client.iter_participants( RallsTHON.full_chat.id):
+    async for user in event.client.iter_participants( ZEDTHON.full_chat.id):
         try:
             if error.startswith("Too"):
                 return (
