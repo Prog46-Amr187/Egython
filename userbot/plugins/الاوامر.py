@@ -683,7 +683,7 @@ async def ge(user, event):
         return None
     return user_obj
 
-########################  SOURCE Ralls ~ BY: Alsh (@QQ070)  ########################
+########################  SOURCE ZED ~ BY: ZelZal (@ZlZZl77)  ########################
 
 @bot.on(admin_cmd(pattern="نسبه الحب(?:\s|$)([\s\S]*)"))
 async def zed(mention):
