@@ -1,7 +1,5 @@
-# profile code for -<*>- SOURCE 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉-<*>- #
-# =========================================#
 # edit By: @RallsThon
-# =========================================#
+
 
 import os
 
@@ -26,7 +24,7 @@ NAME_OK = "** ⪼ تم تغير اسم حسابك بنجاح 𓆰،**"
 USERNAME_SUCCESS = "**⪼ تم تغير معرف حسابك بنجاح 𓆰،**"
 USERNAME_TAKEN = "** ⪼ هذا المعرف مستخدم  𓆰،**"
 # ===============================================================
-@icssbot.on(admin_cmd(pattern="a2c(?: |$)(.*)"))
+@bot.on(admin_cmd(pattern="a2c(?: |$)(.*)"))
 async def _(event):
     event.pattern_match.group(1)
     if event.reply_to_msg_id:
@@ -54,7 +52,7 @@ async def _(event):
     await asyncio.sleep(3)
     await star.delete()
 
-@icssbot.on(admin_cmd(pattern="ضع بايو (.*)"))  # pylint:disable=E0602
+@bot.on(admin_cmd(pattern="ضع بايو (.*)"))  # pylint:disable=E0602
 async def _(event):
     if event.fwd_from:
         return
@@ -68,7 +66,7 @@ async def _(event):
         await event.edit(str(e))
 
 
-@icssbot.on(admin_cmd(pattern="ضع اسم ((.|\n)*)"))  # pylint:disable=E0602,W0703
+@bot.on(admin_cmd(pattern="ضع اسم ((.|\n)*)"))  # pylint:disable=E0602,W0703
 async def _(event):
     if event.fwd_from:
         return
@@ -88,7 +86,7 @@ async def _(event):
         await event.edit(str(e))
 
 
-@icssbot.on(admin_cmd(pattern="جلب صوره"))  # pylint:disable=E0602
+@bot.on(admin_cmd(pattern="جلب صوره"))  # pylint:disable=E0602
 async def _(event):
     if event.fwd_from:
         return
@@ -134,7 +132,7 @@ async def _(event):
         logger.warn(str(e))  # pylint:
 
 
-@icssbot.on(admin_cmd(outgoing=True, pattern="ضع معرف (.*)"))
+@bot.on(admin_cmd(outgoing=True, pattern="ضع معرف (.*)"))
 async def update_username(username):
     """ امر - ضع معرف - لتغير معرف حسابك """
     newusername = username.pattern_match.group(1)
@@ -145,7 +143,7 @@ async def update_username(username):
         await username.edit(USERNAME_TAKEN)
 
 
-@icssbot.on(admin_cmd(outgoing=True, pattern="الحساب$"))
+@bot.on(admin_cmd(outgoing=True, pattern="الحساب$"))
 async def count(event):
     """ هذا امر الحساب - لعرض معلومات الحساب """
     u = 0
@@ -173,19 +171,19 @@ async def count(event):
         else:
             print(d)
 
-    result += f"𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉- 𝑷𝑹𝑶𝑭𝑰𝑳 𝑫𝑨𝑻𝑨 𓆪\n"
+    result += f"𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 𝙕𝞝𝘿𝙏𝙃𝙊𝙉 - 𝑷𝑹𝑶𝑭𝑰𝑳 𝑫𝑨𝑻𝑨 𓆪\n"
     result += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n"
-    result += f"**⌔∮ المستخدمون :**\t**{u}**\n"
-    result += f"**⌔∮ المجموعات :**\t**{g}**\n"
-    result += f"**⌔∮ المجموعات الخارقه :**\t**{c}**\n"
-    result += f"**⌔∮ القنوات :**\t**{bc}**\n"
-    result += f"**⌔∮ البوتات :**\t**{b}**\n"
+    result += f"**⌔╎المستخدمون :**\t**{u}**\n"
+    result += f"**⌔╎المجموعات :**\t**{g}**\n"
+    result += f"**⌔╎المجموعات الخارقه :**\t**{c}**\n"
+    result += f"**⌔╎القنوات :**\t**{bc}**\n"
+    result += f"**⌔╎البوتات :**\t**{b}**\n"
     result += f"𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻"
 
     await event.edit(result)
 
 
-@icssbot.on(admin_cmd(outgoing=True, pattern=r"تهيئه"))
+@bot.on(admin_cmd(outgoing=True, pattern=r"تهيئه"))
 async def remove_profilepic(delpfp):
     """ امر حذف الصور - لحذ صوره واحد من حسابك او جميعها """
     group = delpfp.text[8:]
@@ -210,7 +208,7 @@ async def remove_profilepic(delpfp):
     await delpfp.edit(f"**⪼ تم حذف ↩︎** {len(input_photos)} **من صور حسابك ༗.**")
 
 
-@icssbot.on(admin_cmd(pattern="كروباتي$"))
+@bot.on(admin_cmd(pattern="كروباتي$"))
 async def _(event):
     if event.fwd_from:
         return
@@ -221,6 +219,62 @@ async def _(event):
     await event.edit(output_str)
 
 
+name = "Profile Photos"
+
+
+@bot.on(admin_cmd(pattern="افاتار ?(.*)", outgoing=True))
+@bot.on(sudo_cmd(pattern="افاتار ?(.*)", allow_sudo=True))
+async def potocmd(event):
+    uid = "".join(event.raw_text.split(maxsplit=1)[1:])
+    user = await event.get_reply_message()
+    chat = event.input_chat
+    if user:
+        photos = await event.client.get_profile_photos(user.sender)
+        u = True
+    else:
+        photos = await event.client.get_profile_photos(chat)
+        u = False
+    if uid.strip() == "":
+        uid = 1
+        if int(uid) > (len(photos)):
+            return await edit_delete(
+                event, "`No photo found of this NIBBA / NIBBI. Now u Die!`"
+            )
+        send_photos = await event.client.download_media(photos[uid - 1])
+        await event.client.send_file(event.chat_id, send_photos)
+    elif uid.strip() == "الكل":
+        if len(photos) > 0:
+            await event.client.send_file(event.chat_id, photos)
+        else:
+            try:
+                if u:
+                    photo = await event.client.download_profile_photo(user.sender)
+                else:
+                    photo = await event.client.download_profile_photo(event.input_chat)
+                await event.client.send_file(event.chat_id, photo)
+            except Exception:
+                return await edit_delete(event, "**عذراً .. لا توجد افاتارات لهذا الشخص؟!**")
+    else:
+        try:
+            uid = int(uid)
+            if uid <= 0:
+                await edit_or_reply(
+                    event, "```number Invalid!``` **Are you Comedy Me ?**"
+                )
+                return
+        except BaseException:
+            await edit_or_reply(event, "`Are you comedy me ?`")
+            return
+        if int(uid) > (len(photos)):
+            return await edit_delere(
+                event, "**عذراً .. لا توجد افاتارات لهذا الشخص؟!**"
+            )
+
+        send_photos = await event.client.download_media(photos[uid - 1])
+        await event.client.send_file(event.chat_id, send_photos)
+    await event.delete()
+
+
 CMD_HELP.update(
     {
         "الحساب": ".ضع معرف + المعرف الجديد\
@@ -228,7 +282,9 @@ CMD_HELP.update(
 \n\n.ضع اسم الاسم الاول / .ضع اسم الاسم الاول + الاسم الثاني\
 \nالشـرح •• لتغيير اسم حسابك\
 \n\n.جلب صوره\
-\nالشـرح •• بالرد ع الصوره لوضعها بروفايل حسابك.\
+\nالشـرح •• بالرد ع الصوره لوضعها افاتار حسابك.\
+\n\n.افاتار / .افاتار الكل\
+\nالشـرح •• بالرد ع شخص لجلب افاتاره /.افاتار الكل لجلب كل افاتارات الشخص.\
 \n\n.ضع بايو + البايو الجديد\
 \nالشـرح •• لتغير بايو حسابك.\
 \n\n.تهيئه / .تهيئه العدد/الكل\
