@@ -10,7 +10,7 @@ from .sql_helper.filter_sql import (
 )
 
 
-@bot.on(admin_cmd(incoming=True))
+@icssbot.on(admin_cmd(incoming=True))
 async def filter_incoming_handler(handler):
     try:
         if (
@@ -35,8 +35,8 @@ async def filter_incoming_handler(handler):
         pass
 
 
-@bot.on(admin_cmd(pattern="اضف رد (.*)"))
-@bot.on(sudo_cmd(pattern="اضف رد (.*)", allow_sudo=True))
+@icssbot.on(admin_cmd(pattern="اضف رد (.*)"))
+@icssbot.on(sudo_cmd(pattern="اضف رد (.*)", allow_sudo=True))
 async def add_new_filter(new_handler):
     if new_handler.fwd_from:
         return
@@ -63,54 +63,54 @@ async def add_new_filter(new_handler):
         else:
             await edit_or_reply(
                 new_handler,
-                "**❈╎يتطلب رد ميديـا تعيين كـروب السجـل اولاً ..**\n**❈╎لاضافـة كـروب السجـل**\n**❈╎اتبـع الشـرح ⇚** https://t.me/Ralls_var",
+                "`يتطلب حفظ الوسائط كرد على المرشح تعيين BOTLOG_CHATID.`",
             )
             return
     elif new_handler.reply_to_msg_id and not string:
         rep_msg = await new_handler.get_reply_message()
         string = rep_msg.text
-    success = "**- ❝ الـرد ↫** {} **تـم {} لـ الميديـا بـ نجـاح 🎆☑️𓆰**"
+    success = "- ❝ الرد **{}** تم {} بنجاح 𓆰."
     if add_filter(str(new_handler.chat_id), keyword, string, msg_id) is True:
-        return await edit_or_reply(new_handler, success.format(keyword, "اضافتـه"))
+        return await edit_or_reply(new_handler, success.format(keyword, "اضافته"))
     remove_filter(str(new_handler.chat_id), keyword)
     if add_filter(str(new_handler.chat_id), keyword, string, msg_id) is True:
-        return await edit_or_reply(new_handler, success.format(keyword, "تحديثـه"))
+        return await edit_or_reply(new_handler, success.format(keyword, "تحديثه"))
     await edit_or_reply(new_handler, f"خطأ أثناء تعيين عامل التصفية لـ {keyword}")
 
 
-@bot.on(admin_cmd(pattern="الردود$"))
-@bot.on(sudo_cmd(pattern="الردود$", allow_sudo=True))
+@icssbot.on(admin_cmd(pattern="الردود$"))
+@icssbot.on(sudo_cmd(pattern="الردود$", allow_sudo=True))
 async def on_snip_list(event):
     if event.fwd_from:
         return
-    OUT_STR = "** ❈╎لاتوجـد ردود في هـذه الدردشـه ༗**"
+    OUT_STR = "** ⪼ لاتوجـد ردود في هذه الدردشه ༗،**"
     filters = get_filters(event.chat_id)
     for filt in filters:
-        if OUT_STR == "** ❈╎لاتوجـد ردود في هـذه الدردشـه ༗**":
-            OUT_STR = "𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 Rallsthon - Rallsthon 𝑭𝑰𝑳𝑻𝑬𝑹𝑺 𓆪\n 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n**  ⪼ قائمـه الـردود في هذه الدردشـه :  **\n"
+        if OUT_STR == "** ⪼ لاتوجـد ردود في هذه الدردشه ༗،**":
+            OUT_STR = "𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 - 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 𝑭𝑰𝑳𝑻𝑬𝑹𝑺 𓆪\n 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n**  ⪼ قائمـه الـردود في هذه الدردشـه :  **\n"
         OUT_STR += "⪼ {}  𓆰.\n".format(filt.keyword)
     await edit_or_reply(
         event,
         OUT_STR,
-        caption="**⧗╎الـردود المضـافـه في هـذه الدردشـه هـي :**",
+        caption="** ⪼ الردود المضـافه في هذه الدردشه ༗،**",
         file_name="filters.text",
     )
 
 
-@bot.on(admin_cmd(pattern="حذف رد (.*)"))
-@bot.on(sudo_cmd(pattern="حذف رد (.*)", allow_sudo=True))
+@icssbot.on(admin_cmd(pattern="حذف رد (.*)"))
+@icssbot.on(sudo_cmd(pattern="حذف رد (.*)", allow_sudo=True))
 async def remove_a_filter(r_handler):
     if r_handler.fwd_from:
         return
     filt = r_handler.pattern_match.group(1)
     if not remove_filter(r_handler.chat_id, filt):
-        await r_handler.edit("**- ❝ الـرد ↫** {} **غيـر موجـود ⁉️**".format(filt))
+        await r_handler.edit("- ❝ الرد ↫ **{}** غير موجود 𓆰.".format(filt))
     else:
-        await r_handler.edit("**- ❝ الـرد ↫** {} **تم حذفه بنجاح ☑️**".format(filt))
+        await r_handler.edit("- ❝ الرد ↫ **{}** تم حذفه بنجاح 𓆰.".format(filt))
 
 
-@bot.on(admin_cmd(pattern="حذف الردود$"))
-@bot.on(sudo_cmd(pattern="حذف الردود$", allow_sudo=True))
+@icssbot.on(admin_cmd(pattern="مسح الردود$"))
+@icssbot.on(sudo_cmd(pattern="مسح الردود$", allow_sudo=True))
 async def on_all_snip_delete(event):
     if event.fwd_from:
         return
@@ -119,10 +119,10 @@ async def on_all_snip_delete(event):
         remove_all_filters(event.chat_id)
         await edit_or_reply(
             event,
-            f"𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 Rallsthon - Rallsthon 𝑭𝑰𝑳𝑻𝑬𝑹𝑺 𓆪\n 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n**⪼ تم حذف جـميع ردود المضافهہ بنجاح .**",
+            f"𓆩 𝑺𝑶𝑼𝑹𝑪𝑬 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 - 𝐑𝐀𝐈𝐈𝐒𝙏𝙃𝙊𝙉 𝑭𝑰𝑳𝑻𝑬𝑹𝑺 𓆪\n 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻\n**⪼ تم حذف جـميع ردود المضافهہ بنجاح .**",
         )
     else:
-        await edit_or_reply(event, f"**❈╎عـذراً .. لا توجـد ردود في هـذه المجموعـه**")
+        await edit_or_reply(event, f"**⪼ لا توجد ردود في هذه المجموعه 𓆰،**")
 
 
 CMD_HELP.update(
