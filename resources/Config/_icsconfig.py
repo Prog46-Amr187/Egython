@@ -26,7 +26,6 @@ class Config(object):
     )
 
     AUTONAME = os.environ.get("AUTONAME", None)
-    TI_FN = os.environ.get("TI_FN", None)
     PRIVATE_GROUP_BOT_API_ID = int(os.environ.get("PRIVATE_GROUP_BOT_API_ID") or 0)
     PRIVATE_GROUP_ID = int(os.environ.get("PRIVATE_GROUP_ID") or 0)
     PRIVATE_CHANNEL_BOT_API_ID = int(os.environ.get("PRIVATE_CHANNEL_BOT_API_ID") or 0)
@@ -42,6 +41,7 @@ class Config(object):
     SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
 
     PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL") or 0)
+    TI_FN = os.environ.get("TI_FN", None)
     CUSTOM_ALIVE_TEXT = os.environ.get("CUSTOM_ALIVE_TEXT", None)
     CUSTOM_ALIVE_EMOJI = os.environ.get("CUSTOM_ALIVE_EMOJI", None)
     CUSTOM_ALIVE_EMZED = os.environ.get("CUSTOM_ALIVE_EMZED", None)
