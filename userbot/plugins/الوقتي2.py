@@ -1,6 +1,5 @@
 #RallsThon
 
-
 import asyncio
 import base64
 import os
@@ -20,10 +19,9 @@ from .sql_helper.globals import addgvar, delgvar, gvarstatus
 DEFAULTUSERBIO = DEFAULT_BIO or "الحمد الله على كل شئ - @RallsThon"
 CHANGE_TIME = Config.CHANGE_TIME
 DEFAULTUSER = AUTONAME or Config.ALIVE_NAME
-RallsT = Config.CUSTOM_ALIVE_EMRalls or " "
+ZEDT = Config.CUSTOM_ALIVE_EMZED or " "
 
 FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
-
 
 normzltext = "1234567890"
 namerafont = "١٢٣٤٥٦٧٨٩٠"
@@ -361,7 +359,7 @@ async def autoaname_loop():
             if normal in normzltext:
               namefont = namerafont[normzltext.index(normal)]
               HM = HM.replace(normal, namefont)
-        name = f"{RallsT}{HM}™"
+        name = f"{ZEDT}{HM}™"
         LOGS.info(name)
         try:
             await bot(functions.account.UpdateProfileRequest(first_name=name))
@@ -401,7 +399,7 @@ async def autobname_loop():
             if normal in normzltext:
               namefont = namerbfont[normzltext.index(normal)]
               HM = HM.replace(normal, namefont)
-        name = f"{RallsT}{HM}™"
+        name = f"{ZEDT}{HM}™"
         LOGS.info(name)
         try:
             await bot(functions.account.UpdateProfileRequest(first_name=name))
@@ -440,7 +438,7 @@ async def autocname_loop():
             if normal in normzltext:
               namefont = namercfont[normzltext.index(normal)]
               HM = HM.replace(normal, namefont)
-        name = f"{RallsT}{HM}™"
+        name = f"{ZEDT}{HM}™"
         LOGS.info(name)
         try:
             await bot(functions.account.UpdateProfileRequest(first_name=name))
@@ -479,7 +477,7 @@ async def autodname_loop():
             if normal in normzltext:
               namefont = namerdfont[normzltext.index(normal)]
               HM = HM.replace(normal, namefont)
-        name = f"{RallsT}{HM}™"
+        name = f"{ZEDT}{HM}™"
         LOGS.info(name)
         try:
             await bot(functions.account.UpdateProfileRequest(first_name=name))
@@ -518,7 +516,7 @@ async def autoename_loop():
             if normal in normzltext:
               namefont = namerefont[normzltext.index(normal)]
               HM = HM.replace(normal, namefont)
-        name = f"{RallsT}{HM}™"
+        name = f"{ZEDT}{HM}™"
         LOGS.info(name)
         try:
             await bot(functions.account.UpdateProfileRequest(first_name=name))
@@ -557,7 +555,7 @@ async def autofname_loop():
             if normal in normzltext:
               namefont = namerffont[normzltext.index(normal)]
               HM = HM.replace(normal, namefont)
-        name = f"{RallsT}{HM}™"
+        name = f"{ZEDT}{HM}™"
         LOGS.info(name)
         try:
             await bot(functions.account.UpdateProfileRequest(first_name=name))
@@ -596,7 +594,7 @@ async def autogname_loop():
             if normal in normzltext:
               namefont = namergfont[normzltext.index(normal)]
               HM = HM.replace(normal, namefont)
-        name = f"{RallsT}{HM}™"
+        name = f"{ZEDT}{HM}™"
         LOGS.info(name)
         try:
             await bot(functions.account.UpdateProfileRequest(first_name=name))
@@ -635,7 +633,7 @@ async def autohname_loop():
             if normal in normzltext:
               namefont = namerhfont[normzltext.index(normal)]
               HM = HM.replace(normal, namefont)
-        name = f"{RallsT}{HM}™"
+        name = f"{ZEDT}{HM}™"
         LOGS.info(name)
         try:
             await bot(functions.account.UpdateProfileRequest(first_name=name))
@@ -674,7 +672,7 @@ async def autoiname_loop():
             if normal in normzltext:
               namefont = namerifont[normzltext.index(normal)]
               HM = HM.replace(normal, namefont)
-        name = f"{RallsT}{HM}™"
+        name = f"{ZEDT}{HM}™"
         LOGS.info(name)
         try:
             await bot(functions.account.UpdateProfileRequest(first_name=name))
@@ -713,7 +711,7 @@ async def autojname_loop():
             if normal in normzltext:
               namefont = namerjfont[normzltext.index(normal)]
               HM = HM.replace(normal, namefont)
-        name = f"{RallsT}{HM}™"
+        name = f"{ZEDT}{HM}™"
         LOGS.info(name)
         try:
             await bot(functions.account.UpdateProfileRequest(first_name=name))
@@ -752,7 +750,7 @@ async def autokname_loop():
             if normal in normzltext:
               namefont = namerkfont[normzltext.index(normal)]
               HM = HM.replace(normal, namefont)
-        name = f"{RallsT}{HM}™"
+        name = f"{ZEDT}{HM}™"
         LOGS.info(name)
         try:
             await bot(functions.account.UpdateProfileRequest(first_name=name))
@@ -791,7 +789,7 @@ async def autolname_loop():
             if normal in normzltext:
               namefont = namerlfont[normzltext.index(normal)]
               HM = HM.replace(normal, namefont)
-        name = f"{RallsT}{HM}™"
+        name = f"{ZEDT}{HM}™"
         LOGS.info(name)
         try:
             await bot(functions.account.UpdateProfileRequest(first_name=name))
@@ -830,7 +828,7 @@ async def automname_loop():
             if normal in normzltext:
               namefont = namermfont[normzltext.index(normal)]
               HM = HM.replace(normal, namefont)
-        name = f"{RallsT}{HM}™"
+        name = f"{ZEDT}{HM}™"
         LOGS.info(name)
         try:
             await bot(functions.account.UpdateProfileRequest(first_name=name))
