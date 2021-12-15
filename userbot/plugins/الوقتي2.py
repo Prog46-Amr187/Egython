@@ -325,8 +325,6 @@ async def _(event):
     await autombio_loop()
 
 
-#زلــزال الهيبــه zzzzl1l@
-
 @bot.on(admin_cmd(pattern="انهاء (.*)"))
 async def _(event):  # sourcery no-metrics
     if event.fwd_from:
