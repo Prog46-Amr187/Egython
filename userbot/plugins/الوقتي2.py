@@ -1,4 +1,5 @@
-#RallsThon
+#RallsThon ®
+
 
 import asyncio
 import base64
@@ -22,6 +23,7 @@ DEFAULTUSER = AUTONAME or Config.ALIVE_NAME
 ZEDT = Config.CUSTOM_ALIVE_EMZED or " "
 
 FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
+
 
 normzltext = "1234567890"
 namerafont = "١٢٣٤٥٦٧٨٩٠"
@@ -323,6 +325,7 @@ async def _(event):
     addgvar("autobio", True)
     await edit_delete(event, "** تم تفعيل الـنبذة التلقائيه بنجاح 𓆰**")
     await autombio_loop()
+
 
 
 @bot.on(admin_cmd(pattern="انهاء (.*)"))
