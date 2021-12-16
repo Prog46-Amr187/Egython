@@ -686,61 +686,61 @@ async def ge(user, event):
 ########################  SOURCE Ralls ~ BY: ali (@QQ070)  ########################
 
 @bot.on(admin_cmd(pattern="نسبه الحب(?:\s|$)([\s\S]*)"))
-async def Ralls(mention):
+async def zed(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    Rallsth = user.first_name.replace("\u2060", "") if user.first_name else user.username
-    Rallst = random.choice(kno)
-    await edit_or_reply(mention, f"⌔╎نـسـبتكم انـت و [{Rallsth}](tg://user?id={user.id}) هـي {Rallst} 😔🖤")
+    zedth = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    zedt = random.choice(kno)
+    await edit_or_reply(mention, f"⌔╎نـسـبتكم انـت و [{zedth}](tg://user?id={user.id}) هـي {zedt} 😔🖤")
 @bot.on(admin_cmd(pattern="نسبه الانوثه(?:\s|$)([\s\S]*)"))
-async def Ralls(mention):
+async def zed(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    Rallsth = user.first_name.replace("\u2060", "") if user.first_name else user.username
-    Rallst = random.choice(arb)
-    await edit_or_reply(mention, f"⌔╎نسبه الانوثه لـ [{Rallsth}](tg://user?id={user.id}) هـي {Rallst} 🤰")
+    zedth = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    zedt = random.choice(arb)
+    await edit_or_reply(mention, f"⌔╎نسبه الانوثه لـ [{zedth}](tg://user?id={user.id}) هـي {zedt} 🤰")
 @bot.on(admin_cmd(pattern="نسبه الغباء(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    Rallsth = user.first_name.replace("\u2060", "") if user.first_name else user.username
-    Rallst = random.choice(arb)
-    await edit_or_reply(mention, f"⌔╎نسبه الغباء لـ [{Rallsth}](tg://user?id={user.id}) هـي {Rallst} 😂💔")
+    zedth = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    zedt = random.choice(arb)
+    await edit_or_reply(mention, f"⌔╎نسبه الغباء لـ [{zedth}](tg://user?id={user.id}) هـي {zedt} 😂💔")
 @bot.on(admin_cmd(pattern="نسبه الانحراف(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    Rallsth = user.first_name.replace("\u2060", "") if user.first_name else user.username
-    Rallst = random.choice(arb)
-    await edit_or_reply(mention, f"⌔╎نسبة الانحراف لـ [{Rallsth}](tg://user?id={user.id}) هـي {Rallst} 🥵🖤")
+    zedth = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    zedt = random.choice(arb)
+    await edit_or_reply(mention, f"⌔╎نسبة الانحراف لـ [{zedth}](tg://user?id={user.id}) هـي {zedt} 🥵🖤")
 @bot.on(admin_cmd(pattern="نسبه المثليه(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    Rallsth = user.first_name.replace("\u2060", "") if user.first_name else user.username
-    Rallst = random.choice(arb)
-    await edit_or_reply(mention, f"⌔╎نسبه المثليه لـ [{Rallsth}](tg://user?id={user.id}) هـي {Rallst} 🤡 🏳️‍🌈.")
+    zedth = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    zedt = random.choice(arb)
+    await edit_or_reply(mention, f"⌔╎نسبه المثليه لـ [{zedth}](tg://user?id={user.id}) هـي {zedt} 🤡 🏳️‍🌈.")
 @bot.on(admin_cmd(pattern="نسبه النجاح(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    Rallsth = user.first_name.replace("\u2060", "") if user.first_name else user.username
-    Rallst = random.choice(arb)
-    await edit_or_reply(mention, f"⌔╎نسبه النجاح لـ [{Rallsth}](tg://user?id={user.id}) هـي {Rallst} 🤓.") 
+    zedth = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    zedt = random.choice(arb)
+    await edit_or_reply(mention, f"⌔╎نسبه النجاح لـ [{zedth}](tg://user?id={user.id}) هـي {zedt} 🤓.") 
 @bot.on(admin_cmd(pattern="نسبه الكراهيه(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
     if not user:
         return
-    Rallsth = user.first_name.replace("\u2060", "") if user.first_name else user.username
-    Rallst = random.choice(arb)
-    await edit_or_reply(mention, f"⌔╎نسبه الكراهـي لـ [{Rallsth}](tg://user?id={user.id}) هـي {Rallst} 🤮.")
+    zedth = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    zedt = random.choice(arb)
+    await edit_or_reply(mention, f"⌔╎نسبه الكراهـي لـ [{zedth}](tg://user?id={user.id}) هـي {zedt} 🤮.")
 
 @bot.on(admin_cmd(pattern="رفع ورع(?:\s|$)([\s\S]*)"))
 async def Ralls(mention):
