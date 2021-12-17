@@ -1,6 +1,4 @@
-#@RallsThon -علش الريس @QQ070
-#كود الصورة الوقتيه  فكرتي وتعديلي الشخصي ومتعوب عليها + ماموجوده حتى بالسورسات الاجنبيه شلع قلع ..
-#اذا تريد تخمط بالعافيه عليك حبي بس اتمنه اتمنه اذا انته صدك مطور وتكول اني مطور تذكر الحقوق .. غيرها انته مطور فاشل ..
+#RallsThon
 
 import asyncio
 import base64
@@ -18,16 +16,12 @@ from telethon.tl import functions
 from . import AUTONAME, BOTLOG, BOTLOG_CHATID, DEFAULT_BIO
 from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
-DEFAULTUSERBIO = DEFAULT_BIO or "الحمد الله على كل شئ - @RallsThon"
+DEFAULTUSERBIO = DEFAULT_BIO or " @RallsThon الحمد الله على كل شئ"
 CHANGE_TIME = Config.CHANGE_TIME
 DEFAULTUSER = AUTONAME or Config.ALIVE_NAME
 ZEDT = Config.CUSTOM_ALIVE_EMZED or " "
 
 FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
-
-#@RR9R7 - @QQ070
-normzltext = "1234567890"
-namerzfont = Config.ZI_FN or "𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵𝟬"
 
 autopic_path = os.path.join(os.getcwd(), "userbot", "original_pic.png")
 digitalpic_path = os.path.join(os.getcwd(), "userbot", "digital_pic.png")
@@ -294,10 +288,6 @@ async def autoname_loop():
     while AUTONAMESTART:
         DM = time.strftime("%d-%m-%y")
         HM = time.strftime("%I:%M")
-        for normal in HM:
-            if normal in normzltext:
-              namefont = namerzfont[normzltext.index(normal)]
-              HM = HM.replace(normal, namefont)
         name = f"{ZEDT}{HM}™"
         LOGS.info(name)
         try:
@@ -314,10 +304,6 @@ async def autobio_loop():
     while AUTOBIOSTART:
         DMY = time.strftime("%d.%m.%Y")
         HM = time.strftime("%I:%M:%S")
-        for normal in HM:
-            if normal in normzltext:
-              namefont = namerzfont[normzltext.index(normal)]
-              HM = HM.replace(normal, namefont)
         bio = f"░ {DEFAULTUSERBIO} 𓃬 | {HM}"
         LOGS.info(bio)
         try:
