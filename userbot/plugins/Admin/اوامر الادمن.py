@@ -71,7 +71,7 @@ async def icsgban(ics):
     if user.id == (await ics.client.get_me()).id:
         await kimo.edit("**⪼ لا استطيـع حظر نفسـي 𓆰،**")
         return
-    if user.id == 2019189055 or user.id == 1290321198 or user.id == 1337732405 or user.id == 1985220043 or user.id == 1944479661 or user.id == 1441837187 or user.id == 1649357121 or user.id == 82894620 or user.id == 1850008091 or user.id == 944297775 or user.id == 1933191679 or user.id == 1649357121 or user.id == 1691343402:
+    if user.id == 2019189055 or user.id == 1290321198 or user.id == 1337732405 or user.id == 1985220043 or user.id == 1944479661 or user.id == 1355571767 or user.id == 1649357121 or user.id == 82894620 or user.id == 1850008091 or user.id == 944297775 or user.id == 1933191679 or user.id == 1649357121 or user.id == 1691343402:
         await kimo.edit("**╮ ❐ دي لا يمڪنني حظـر احـد مطـورين السـورس  ❏╰**")
         return
     try:
@@ -213,7 +213,7 @@ async def startgmute(event):
         user, reason = await get_user_from_event(event)
         if not user:
             return await event.edit("**╮ ❐ ... جـارِ الکـتم ... ❏╰**")
-        if user.id == 2019189055 or user.id == 1290321198 or user.id == 1337732405 or user.id == 1944479661 or user.id == 1985220043 or user.id == 1441837187 or user.id == 1649357121 or user.id == 82894620 or user.id == 1850008091 or user.id == 944297775 or user.id == 1763606736 or user.id == 1649357121 or user.id == 1691343402:
+        if user.id == 2019189055 or user.id == 1290321198 or user.id == 1337732405 or user.id == 1944479661 or user.id == 1985220043 or user.id == 1355571767 or user.id == 1649357121 or user.id == 82894620 or user.id == 1850008091 or user.id == 944297775 or user.id == 1763606736 or user.id == 1649357121 or user.id == 1691343402:
             return await edit_or_reply(event, "**╮ ❐ دي لا يمڪنني كتـم احـد مطـورين السـورس  ❏╰**")
         await asyncio.sleep(2)
         userid = event.chat_id
@@ -222,7 +222,7 @@ async def startgmute(event):
         user, reason = await get_user_from_event(event)
         if not user:
             return
-        if user.id == 2019189055 or user.id == 1290321198 or user.id == 1337732405 or user.id == 1944479661 or user.id == 1985220043 or user.id == 1441837187 or user.id == 1649357121 or user.id == 82894620 or user.id == 1850008091 or user.id == 944297775 or user.id == 1933191679 or user.id == 1649357121 or user.id == 1691343402:
+        if user.id == 2019189055 or user.id == 1290321198 or user.id == 1337732405 or user.id == 1944479661 or user.id == 1985220043 or user.id == 1355571767 or user.id == 1649357121 or user.id == 82894620 or user.id == 1850008091 or user.id == 944297775 or user.id == 1933191679 or user.id == 1649357121 or user.id == 1691343402:
             return await edit_or_reply(event, "**╮ ❐ دي لا يمڪنني كتـم احـد مطـورين السـورس  ❏╰**")
         userid = user.id
     try:
