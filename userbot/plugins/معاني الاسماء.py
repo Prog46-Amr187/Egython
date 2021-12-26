@@ -60,7 +60,7 @@ async def _(event):
         return await edit_or_reply(
             event, "**╮ .صفات + الاسـم ... للبحـث عن صفات الاسمـاء ...𓅫╰**"
         )
-    chat = "@@Hdhdh6bot"
+    chat = "@Hdhdh6bot"
     catevent = await edit_or_reply(event, "**╮•⎚ جـارِ البحـث عـن صفـات الاسـم ... 🧸🎈**")
     async with event.client.conversation(chat) as conv:
         try:
@@ -71,7 +71,7 @@ async def _(event):
             response = await response
             await event.client.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
-            await catevent.edit("**╮•⎚ تحـقق من انـك لم تقـم بحظر البوت @@Hdhdh6bot .. ثم اعـد استخدام الامـر ...🤖♥️**")
+            await catevent.edit("**╮•⎚ تحـقق من انـك لم تقـم بحظر البوت @Hdhdh6bot .. ثم اعـد استخدام الامـر ...🤖♥️**")
             return
         if response.text.startswith("I can't find that"):
             await catevent.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
