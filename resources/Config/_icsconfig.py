@@ -22,7 +22,7 @@ class Config(object):
     TOSH_START = os.environ.get("TOSH_START", None)
     TZ = os.environ.get("TZ", "Asia/Baghdad")
     UPSTREAM_REPO = os.environ.get(
-        "UPSTREAM_REPO", "https://github.com/Zedthon/ZED_USERBOT.git"
+        "UPSTREAM_REPO", "https://github.com/RallsTeam/Ralls_Ralls_thon.git"
     )
 
     AUTONAME = os.environ.get("AUTONAME", None)
@@ -43,9 +43,9 @@ class Config(object):
     PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL") or 0)
     CUSTOM_ALIVE_TEXT = os.environ.get("CUSTOM_ALIVE_TEXT", None)
     CUSTOM_ALIVE_EMOJI = os.environ.get("CUSTOM_ALIVE_EMOJI", None)
-    CUSTOM_ALIVE_EMZED = os.environ.get("CUSTOM_ALIVE_EMZED", None)
+    CUSTOM_ALIVE_EMRalls = os.environ.get("CUSTOM_ALIVE_EMRalls", None)
     CUSTOM_PMPERMIT = os.environ.get("CUSTOM_PMPERMIT", None)
-    TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "Zed - UserBot")
+    TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "Ralls - UserBot")
     CLEAN_WELCOME = os.environ.get("CLEAN_WELCOME", True)
     THUMB_IMAGE = os.environ.get(
         "THUMB_IMAGE", "https://telegra.ph/file/5adc05c0958432a117183.jpg"
@@ -62,6 +62,7 @@ class Config(object):
     DEFAULT_PIC = os.environ.get("DEFAULT_PIC", None)
     DEFAULT_BIO = os.environ.get("DEFAULT_BIO", None)
     DEFAULT_NAME = os.environ.get("DEFAULT_NAME", None)
+    ZI_FN = os.environ.get("ZI_FN", "𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵𝟬")
     CUSTOM_PMPERMIT_TEXT = os.environ.get("CUSTOM_PMPERMIT_TEXT", None)
     NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD = int(
         os.environ.get("NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD", 7)
