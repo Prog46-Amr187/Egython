@@ -1,4 +1,4 @@
-#RallsThon
+#@RallsThon -
 
 import asyncio
 import base64
@@ -16,12 +16,16 @@ from telethon.tl import functions
 from . import AUTONAME, BOTLOG, BOTLOG_CHATID, DEFAULT_BIO
 from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
-DEFAULTUSERBIO = DEFAULT_BIO or " @RallsThon الحمد الله على كل شئ"
+DEFAULTUSERBIO = DEFAULT_BIO or "الحمد الله على كل شئ - @RallsThon"
 CHANGE_TIME = Config.CHANGE_TIME
 DEFAULTUSER = AUTONAME or Config.ALIVE_NAME
-ZEDT = Config.CUSTOM_ALIVE_EMZED or " "
+RallsT = Config.CUSTOM_ALIVE_EMRalls or " "
 
 FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
+
+#@QQ070
+normzltext = "1234567890"
+namerzfont = Config.ZI_FN or "𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵𝟬"
 
 autopic_path = os.path.join(os.getcwd(), "userbot", "original_pic.png")
 digitalpic_path = os.path.join(os.getcwd(), "userbot", "digital_pic.png")
@@ -288,7 +292,11 @@ async def autoname_loop():
     while AUTONAMESTART:
         DM = time.strftime("%d-%m-%y")
         HM = time.strftime("%I:%M")
-        name = f"{ZEDT}{HM}™"
+        for normal in HM:
+            if normal in normzltext:
+              namefont = namerzfont[normzltext.index(normal)]
+              HM = HM.replace(normal, namefont)
+        name = f"{RallsT}{HM}™"
         LOGS.info(name)
         try:
             await bot(functions.account.UpdateProfileRequest(first_name=name))
@@ -304,6 +312,10 @@ async def autobio_loop():
     while AUTOBIOSTART:
         DMY = time.strftime("%d.%m.%Y")
         HM = time.strftime("%I:%M:%S")
+        for normal in HM:
+            if normal in normzltext:
+              namefont = namerzfont[normzltext.index(normal)]
+              HM = HM.replace(normal, namefont)
         bio = f"░ {DEFAULTUSERBIO} 𓃬 | {HM}"
         LOGS.info(bio)
         try:
