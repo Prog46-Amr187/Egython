@@ -287,6 +287,19 @@ L = (
 async def marth(marth):
     await marth.edit(L)
 
+@icssbot.on(icss_cmd(pattern="ضفدع"))
+async def purgeme(event):
+    "Make honk say anything."
+    text = event.pattern_match.group(1)
+    reply_to_id = await reply_id(event)
+    bot_name = "@honka_says_bot"
+    if not text:
+        if event.is_reply:
+            text = (await event.get_reply_message()).message
+        else:
+            return await edit_delete(                event, "__What is honk supposed to say? Give some text.__"            )
+    text = deEmojify(text)
+    await event.delete()
 
 
 @bot.on(admin_cmd(pattern="مروحيه(?: |$)(.*)"))
