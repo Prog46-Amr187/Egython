@@ -295,3 +295,20 @@ CMD_HELP.update(
 \nالشـرح •• قائمـه بجميـع كروباتك وقنواتك والبوتات الخ......"
     }
 )
+@bot.on(admin_cmd(pattern="معرفه (.*)"))  # pylint:disable=E0602
+async def _(event):
+    ty = event.pattern_match.group(1)
+    await event.edit("- يتم التعرف")
+    if not ty:
+        await event.edit("يجب وضع ايدي المستخدم للحصول على معرفه")
+        return
+    a = await bot.get_entity(int(ty))
+    if not a:
+        await event.edit("Your id is invalid")
+        return
+    b = a.username
+    c = f"المعرف هو  :  "
+    if not b:
+        await event.edit("- ايدي المستخدم غير صالح")
+        return
+    await event.respond(f"{c}@{b}")
