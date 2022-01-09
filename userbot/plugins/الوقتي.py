@@ -296,7 +296,7 @@ async def autoname_loop():
             if normal in normzltext:
               namefont = namerzfont[normzltext.index(normal)]
               HM = HM.replace(normal, namefont)
-        name = f"{RallsT}{HM}™"
+        name = f"{RallsT}{HM}𓍢𝚁𝚂𓍢"
         LOGS.info(name)
         try:
             await bot(functions.account.UpdateProfileRequest(first_name=name))
