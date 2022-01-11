@@ -110,17 +110,17 @@ async def fetch_info(replied_user, event):
     rotbat = "مـالك الحساب" if user_id == (await event.client.get_me()).id and user_id != 2019189055 and user_id != 1290321198 and user_id != 1337732405 and user_id != 1985220043 and user_id != 1944479661 and user_id != 1441837187 and user_id != 1993573528 and user_id != 1355571767 and user_id != 1850008091 and user_id != 1933191679 and user_id != 1691343402 else rotbat
     caption = f"<b> {Egy_TEXT} </b>\n"
     caption += f"<b> 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻 </b>\n"
-    caption += f"<b> {ZEDM}| 𝑵𝑨𝑴𝑬    ➯ </b> {first_name} {last_name}\n"
-    caption += f"<b> {ZEDM}| 𝑼𝑺𝑬𝑹  ➯ </b> {username}\n"
-    caption += f"<b> {ZEDM}| 𝑰𝑫   ➯ </b> <code>{user_id}</code>\n"
-    caption += f"<b> {ZEDM}| 𝑹𝑶𝑼𝑻𝑩𝑨  ➯ {rotbat} </b>\n"
-    caption += f"<b> {ZEDM}| 𝑵𝑼𝑴𝑩𝑹 𝑷𝑰𝑪   ➯ </b> {replied_user_profile_photos_count}\n"
-    caption += f"<b> {ZEDM}| 𝑷𝑹𝑶 𝑳𝑰𝑵𝑲 ➯ </b> "
+    caption += f"<b> {ZEDM}| 𝑵𝑨𝑴𝑬    » </b> {first_name} {last_name}\n"
+    caption += f"<b> {ZEDM}| 𝑼𝑺𝑬𝑹  » </b> {username}\n"
+    caption += f"<b> {ZEDM}| 𝑰𝑫   » </b> <code>{user_id}</code>\n"
+    caption += f"<b> {ZEDM}| 𝑹𝑶𝑼𝑻𝑩𝑨  » {rotbat} </b>\n"
+    caption += f"<b> {ZEDM}| 𝑵𝑼𝑴𝑩𝑹 𝑷𝑰𝑪   » </b> {replied_user_profile_photos_count}\n"
+    caption += f"<b> {ZEDM}| 𝑷𝑹𝑶 𝑳𝑰𝑵𝑲 » </b> "
     caption += f'<a href="tg://user?id={user_id}">{first_name}</a>'
-    caption += f"\n<b> {ZEDM}| 𝑮𝑹𝑶𝑼𝑷𝑺 ➯ </b> {common_chat} \n"
-    caption += f"<b> {ZEDM}| 𝑩𝑰𝑶    ➯ </b> {user_bio} \n"
+    caption += f"\n<b> {ZEDM}| 𝑮𝑹𝑶𝑼𝑷𝑺 » </b> {common_chat} \n"
+    caption += f"<b> {ZEDM}| 𝑩𝑰𝑶    » </b> {user_bio} \n"
     caption += f"<b> 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻 </b>\n"
-    caption += f"<b> 𝑺𝑶𝑼𝑹𝑪𝑬 𝑬𝑮𝒀𝑻𝑯𝑶𝑵 ➯ </b> - @Egython"
+    caption += f"<b> 𝑺𝑶𝑼𝑹𝑪𝑬 𝑬𝑮𝒀𝑻𝑯𝑶𝑵 » </b> - @Egython"
     return photo, caption
 
 
@@ -223,17 +223,17 @@ async def fetch_info(replied_user, event):
     rotbat = "مـالك الحساب" if user_id == (await event.client.get_me()).id and user_id != 2019189055 and user_id != 1290321198 and user_id != 1337732405 and user_id != 1985220043 and user_id != 1944479661 and user_id != 1441837187 and user_id != 1993573528 and user_id != 1355571767 and user_id != 1850008091 and user_id != 1933191679 and user_id != 1691343402 else rotbat
     caption = f"<b> {Egy_TEXT} </b>\n"
     caption += f"<b> 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻 </b>\n"
-    caption += f"<b> {ZEDM}| 𝑵𝑨𝑴𝑬    ➯ </b> {first_name} {last_name}\n"
-    caption += f"<b> {ZEDM}| 𝑼𝑺𝑬𝑹  ➯ </b> {username}\n"
-    caption += f"<b> {ZEDM}| 𝑰𝑫   ➯ </b> <code>{user_id}</code>\n"
-    caption += f"<b> {ZEDM}| 𝑹𝑶𝑼𝑻𝑩𝑨  ➯ {rotbat} </b>\n"
-    caption += f"<b> {ZEDM}| 𝑵𝑼𝑴𝑩𝑹 𝑷𝑰𝑪   ➯ </b> {replied_user_profile_photos_count}\n"
-    caption += f"<b> {ZEDM}| 𝑷𝑹𝑶 𝑳𝑰𝑵𝑲 ➯ </b> "
+    caption += f"<b> {ZEDM}| 𝑵𝑨𝑴𝑬    » </b> {first_name} {last_name}\n"
+    caption += f"<b> {ZEDM}| 𝑼𝑺𝑬𝑹  » </b> {username}\n"
+    caption += f"<b> {ZEDM}| 𝑰𝑫   » </b> <code>{user_id}</code>\n"
+    caption += f"<b> {ZEDM}| 𝑹𝑶𝑼𝑻𝑩𝑨  » {rotbat} </b>\n"
+    caption += f"<b> {ZEDM}| 𝑵𝑼𝑴𝑩𝑹 𝑷𝑰𝑪   » </b> {replied_user_profile_photos_count}\n"
+    caption += f"<b> {ZEDM}| 𝑷𝑹𝑶 𝑳𝑰𝑵𝑲 » </b> "
     caption += f'<a href="tg://user?id={user_id}">{first_name}</a>'
-    caption += f"\n<b> {ZEDM}| 𝑮𝑹𝑶𝑼𝑷𝑺 ➯ </b> {common_chat} \n"
-    caption += f"<b> {ZEDM}| 𝑩𝑰𝑶    ➯ </b> {user_bio} \n"
+    caption += f"\n<b> {ZEDM}| 𝑮𝑹𝑶𝑼𝑷𝑺 » </b> {common_chat} \n"
+    caption += f"<b> {ZEDM}| 𝑩𝑰𝑶    » </b> {user_bio} \n"
     caption += f"<b> 𓍹ⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧⵧ𓍻 </b>\n"
-    caption += f"<b> 𝑺𝑶𝑼𝑹𝑪𝑬 𝑬𝑮𝒀𝑻𝑯𝑶𝑵 ➯ </b> - @Egython"
+    caption += f"<b> 𝑪𝑯 𝑬𝑮𝒀𝑻𝑯𝑶𝑵 » </b> - @Egython"
     return photo, caption
 
 
